@@ -3,6 +3,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -21,7 +22,7 @@ namespace HFM.Log.Tool
       {
          InitializeComponent();
 
-         base.Text = String.Format("HFM Log Tool v{0}", Core.Application.FullVersion);
+         base.Text = String.Format("HFM Log Tool v{0}", FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).ProductVersion);
 #if !DEV
          btnGenCode.Visible = false;
 #endif
@@ -154,7 +155,7 @@ namespace HFM.Log.Tool
 #endif
             _logLines = LogLineEnumerable.Create(_fahLog).ToList();
             PopulateClientRunsInTree(_fahLog);
-            richTextBox1.SetLogLines(_logLines, String.Empty, true);
+            richTextBox1.SetLogLines(_logLines, true);
          }
          else
          {
