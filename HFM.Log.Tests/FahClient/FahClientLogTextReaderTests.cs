@@ -13,7 +13,7 @@ namespace HFM.Log.FahClient
         [Test]
         public void FahClientLogTextReader_ReadLine_Test()
         {
-            using (var textReader = new StreamReader("..\\..\\..\\TestFiles\\Client_v7_10\\log.txt"))
+            using (var textReader = new StreamReader(TestDataReader.ReadStream("Client_v7_10_log.txt")))
             using (var reader = new FahClientLogTextReader(textReader))
             {
                 LogLine logLine;
@@ -28,7 +28,7 @@ namespace HFM.Log.FahClient
         [Test]
         public async Task FahClientLogTextReader_ReadLineAsync_Test()
         {
-            using (var textReader = new StreamReader("..\\..\\..\\TestFiles\\Client_v7_10\\log.txt"))
+            using (var textReader = new StreamReader(TestDataReader.ReadStream("Client_v7_10_log.txt")))
             using (var reader = new FahClientLogTextReader(textReader))
             {
                 LogLine logLine;
@@ -43,7 +43,7 @@ namespace HFM.Log.FahClient
         [Test]
         public void FahClientLogTextReader_ReadLine_FromLogIncludingHexCharacterRepresentations_Test()
         {
-            using (var textReader = new StreamReader("..\\..\\..\\TestFiles\\Client_v7_fr-FR\\log.txt"))
+            using (var textReader = new StreamReader(TestDataReader.ReadStream("Client_v7_fr-FR_log.txt")))
             using (var reader = new FahClientLogTextReader(textReader))
             {
                 LogLine logLine;

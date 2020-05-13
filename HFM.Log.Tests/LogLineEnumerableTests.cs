@@ -14,7 +14,7 @@ namespace HFM.Log
       public void LogLineEnumerable_FromFahLog_Test()
       {
          // Arrange
-         var fahLog = FahClientLog.Read("..\\..\\..\\TestFiles\\Client_v7_16\\log.txt");
+         var fahLog = FahClientLog.Read(TestDataReader.ReadStream("Client_v7_16_log.txt"));
          // Act
          var enumerable = LogLineEnumerable.Create(fahLog);
          // Assert
@@ -25,7 +25,7 @@ namespace HFM.Log
       public void LogLineEnumerable_FromClientRun_Test()
       {
          // Arrange
-         var fahLog = FahClientLog.Read("..\\..\\..\\TestFiles\\Client_v7_16\\log.txt");
+         var fahLog = FahClientLog.Read(TestDataReader.ReadStream("Client_v7_16_log.txt"));
          var clientRun = fahLog.ClientRuns.Last();
          // Act
          var enumerable = LogLineEnumerable.Create(clientRun);
@@ -37,7 +37,7 @@ namespace HFM.Log
       public void LogLineEnumerable_FromSlotRun_Test()
       {
          // Arrange
-         var fahLog = FahClientLog.Read("..\\..\\..\\TestFiles\\Client_v7_16\\log.txt");
+         var fahLog = FahClientLog.Read(TestDataReader.ReadStream("Client_v7_16_log.txt"));
          var slotRun = fahLog.ClientRuns.Last().SlotRuns[0];
          // Act
          var enumerable = LogLineEnumerable.Create(slotRun);
@@ -49,7 +49,7 @@ namespace HFM.Log
       public void LogLineEnumerable_FromUnitRun_Test()
       {
          // Arrange
-         var fahLog = FahClientLog.Read("..\\..\\..\\TestFiles\\Client_v7_16\\log.txt");
+         var fahLog = FahClientLog.Read(TestDataReader.ReadStream("Client_v7_16_log.txt"));
          var unitRun = fahLog.ClientRuns.Last().SlotRuns[0].UnitRuns.Last();
          // Act
          var enumerable = LogLineEnumerable.Create(unitRun);

@@ -11,6 +11,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="TestData\Client_v7_10_log.txt" />
+    <EmbeddedResource Include="TestData\Client_v7_13_log.txt" />
+    <EmbeddedResource Include="TestData\Client_v7_14_log.txt" />
+    <EmbeddedResource Include="TestData\Client_v7_15_log.txt" />
+    <EmbeddedResource Include="TestData\Client_v7_16_log.txt" />
+    <EmbeddedResource Include="TestData\Client_v7_17_log.txt" />
+    <EmbeddedResource Include="TestData\Client_v7_18_log.txt" />
+    <EmbeddedResource Include="TestData\Client_v7_fr-FR_log.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="nunit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.16.1">
       <PrivateAssets>all</PrivateAssets>
