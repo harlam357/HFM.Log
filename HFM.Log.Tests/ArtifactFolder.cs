@@ -4,7 +4,7 @@ using System.IO;
 
 namespace HFM.Log
 {
-    public sealed class ArtifactFolder : IDisposable
+    internal sealed class ArtifactFolder : IDisposable
     {
         public string Path { get; }
 

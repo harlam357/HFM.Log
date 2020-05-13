@@ -3,7 +3,7 @@ using System;
 
 using NUnit.Framework;
 
-namespace HFM.Log.FahClient
+namespace HFM.Log
 {
    [TestFixture]
    public class FahClientClientRunDataTests

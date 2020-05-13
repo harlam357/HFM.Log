@@ -9,7 +9,7 @@ using NUnit.Framework;
 
 using HFM.Log.Internal;
 
-namespace HFM.Log.FahClient
+namespace HFM.Log
 {
     [TestFixture]
     public class FahClientLogTests

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 using NUnit.Framework;
 
-namespace HFM.Log.FahClient
+namespace HFM.Log
 {
     [TestFixture]
     public class FahClientLogTextReaderTests

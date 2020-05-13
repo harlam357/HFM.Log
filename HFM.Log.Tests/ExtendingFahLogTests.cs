@@ -5,8 +5,6 @@ using System.Linq;
 
 using NUnit.Framework;
 
-using HFM.Log.FahClient;
-
 namespace HFM.Log
 {
     // These tests are examples of how to extend and override the FahLog and FahLogReader implementations.

@@ -136,7 +136,7 @@ namespace HFM.Log.Tool
 #if DEBUG
                 var sw = Stopwatch.StartNew();
 #endif
-                _fahLog = FahClient.FahClientLog.Read(txtLogPath.Text);
+                _fahLog = FahClientLog.Read(txtLogPath.Text);
 #if DEBUG
                 sw.Stop();
                 Debug.WriteLine("FahLog.Read ET: {0}", sw.Elapsed);
@@ -196,7 +196,7 @@ namespace HFM.Log.Tool
                         sb.AppendLine();
                         sb.AppendLine("// Setup SlotRun " + slotRun.FoldingSlot + " - UnitRun " + unitCount);
                         sb.AppendLine((k == 0 ? "var " : String.Empty) + "expectedUnitRun = new UnitRun(expectedSlotRun, " + unitRun.QueueIndex + "," + unitRun.StartIndex + "," + unitRun.EndIndex + ");");
-                        if (unitRun.Data is FahClient.FahClientUnitRunData)
+                        if (unitRun.Data is FahClientUnitRunData)
                         {
                             sb.AppendLine((k == 0 ? "var " : String.Empty) + "expectedUnitRunData = new FahClientUnitRunData();");
                         }
@@ -247,7 +247,7 @@ namespace HFM.Log.Tool
                     }
                     sb.AppendLine();
                     sb.AppendLine("// Setup SlotRunData " + slotRun.FoldingSlot);
-                    if (slotRun.Data is FahClient.FahClientSlotRunData fahClientSlotRunData)
+                    if (slotRun.Data is FahClientSlotRunData fahClientSlotRunData)
                     {
                         sb.AppendLine((j == 0 ? "var " : String.Empty) + "expectedSlotRunData = new FahClientSlotRunData();");
                         sb.AppendLine("expectedSlotRunData.CompletedUnits = " + fahClientSlotRunData.CompletedUnits + ";");
@@ -258,7 +258,7 @@ namespace HFM.Log.Tool
                 }
                 sb.AppendLine();
                 sb.AppendLine("// Setup ClientRunData " + i);
-                if (clientRun.Data is FahClient.FahClientClientRunData)
+                if (clientRun.Data is FahClientClientRunData)
                 {
                     sb.AppendLine((i == 0 ? "var " : String.Empty) + "expectedRunData = new FahClientClientRunData();");
                     var st2 = clientRun.Data.StartTime;
