@@ -34,9 +34,4 @@
     <ProjectReference Include="..\HFM.Log\HFM.Log.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="FahClient\" />
-    <Folder Include="Properties\" />
-  </ItemGroup>
-
 </Project>
