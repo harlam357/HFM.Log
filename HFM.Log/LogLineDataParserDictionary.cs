@@ -78,20 +78,14 @@ namespace HFM.Log
 
                     string percentString = framesCompleted.Result("${Percent}");
 
-                    Match mPercent1 = FahLogRegex.Common.Percent1Regex.Match(percentString);
-                    Match mPercent2 = FahLogRegex.Common.Percent2Regex.Match(percentString);
+                    Match match = FahLogRegex.Common.ProgressPercentRegex.Match(percentString);
 
                     int framePercent;
-                    if (mPercent1.Success)
+                    if (match.Success)
                     {
-                        framePercent = Int32.Parse(mPercent1.Result("${Percent}"), CultureInfo.InvariantCulture);
+                        framePercent = Int32.Parse(match.Result("${Percent}"), CultureInfo.InvariantCulture);
                     }
-                    else if (mPercent2.Success)
-                    {
-                        framePercent = Int32.Parse(mPercent2.Result("${Percent}"), CultureInfo.InvariantCulture);
-                    }
-                    // Try to parse a percentage from in between the parentheses (for older single core clients like v5.02) - Issue 36
-                    else if (!Int32.TryParse(percentString, out framePercent))
+                    else
                     {
                         return null;
                     }
@@ -111,20 +105,6 @@ namespace HFM.Log
 
                         return frame;
                     }
-
-                    /*** ProtoMol Only */
-                    // Issue 191 - New ProtoMol Projects don't report frame progress on the percent boundary.
-                    if (Math.Abs(calculatedPercent - (framePercent + 1)) <= 0.1)
-                    {
-                        if (logLine.TimeStamp != null)
-                        {
-                            frame.TimeStamp = logLine.TimeStamp.Value;
-                        }
-                        frame.ID = framePercent + 1;
-
-                        return frame;
-                    }
-                    /*******************/
 
                     return null;
                 }

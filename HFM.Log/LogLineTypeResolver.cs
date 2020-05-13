@@ -33,15 +33,11 @@ namespace HFM.Log
 
             private static bool IsLineTypeWorkUnitRunning(string line)
             {
-                // Change for v7: Removed the leading "] " portion of the
-                // string for all but the ProtoMol specific conditions.
-
-                return line.Contains("Preparing to commence simulation") ||
-                       line.Contains("Called DecompressByteArray") ||
-                       line.Contains("- Digital signature verified") ||
-                       // ProtoMol Only
-                       line.Contains("] Digital signatures verified") ||
-                       line.Contains("Entering M.D.");
+                if (line.Contains("Preparing to commence simulation")) return true;
+                if (line.Contains("Called DecompressByteArray")) return true;
+                if (line.Contains("- Digital signature verified")) return true;
+                if (line.Contains("Entering M.D.")) return true;
+                return false;
             }
         }
     }

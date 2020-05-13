@@ -30,7 +30,39 @@ namespace HFM.Log.FahClient
         }
 
         [Test]
+        public void FahClientLog_Read_FromPath_Test()
+        {
+            using (var artifacts = new ArtifactFolder())
+            {
+                var path = artifacts.GetRandomFilePath();
+                using (var stream = File.OpenWrite(path))
+                {
+                    TestDataReader.ReadStream("Client_v7_10_log.txt").CopyTo(stream);
+                }
+                
+                var log = FahClientLog.Read(path);
+                Assert.IsTrue(log.ClientRuns.Count > 0);
+            }
+        }
+
+        [Test]
         public async Task FahClientLog_ReadAsync_FromPath_Test()
+        {
+            using (var artifacts = new ArtifactFolder())
+            {
+                var path = artifacts.GetRandomFilePath();
+                using (var stream = File.OpenWrite(path))
+                {
+                    await TestDataReader.ReadStream("Client_v7_10_log.txt").CopyToAsync(stream);
+                }
+                
+                var log = await FahClientLog.ReadAsync(path);
+                Assert.IsTrue(log.ClientRuns.Count > 0);
+            }
+        }
+
+        [Test]
+        public async Task FahClientLog_ReadAsync_FromStream_Test()
         {
             var log = await FahClientLog.ReadAsync(TestDataReader.ReadStream("Client_v7_10_log.txt"));
             Assert.IsTrue(log.ClientRuns.Count > 0);

@@ -31,15 +31,9 @@ namespace HFM.Log.Internal
                new Regex("\\[?(?<Timestamp>\\d{2}:\\d{2}:\\d{2})[\\]|:].*Completed (?<Completed>.*) out of (?<Total>.*) steps {1,2}\\((?<Percent>.*)\\)", Options);
 
             /// <summary>
-            /// Regular Expression to match Percent Style 1
+            /// Regular Expression to match progress percent.
             /// </summary>
-            internal static readonly Regex Percent1Regex =
-               new Regex("(?<Percent>.*) percent", Options);
-
-            /// <summary>
-            /// Regular Expression to match Percent Style 2
-            /// </summary>
-            internal static readonly Regex Percent2Regex =
+            internal static readonly Regex ProgressPercentRegex =
                new Regex("(?<Percent>.*)%", Options);
 
             /// <summary>
