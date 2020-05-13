@@ -72,7 +72,7 @@ namespace HFM.Log
                 if (line.Contains("*********************** Log Started")) return LogLineType.LogOpen;
                 if (line.Contains(":Sending unit results:")) return LogLineType.ClientSendWorkToServer;
                 if (line.Contains(":Requesting new work unit for slot")) return LogLineType.ClientAttemptGetWorkPacket;
-                if (line.Trim().EndsWith(":Starting")) return LogLineType.WorkUnitWorking;
+                if (line.Trim().EndsWith(":Starting", StringComparison.InvariantCulture)) return LogLineType.WorkUnitWorking;
                 // Appears to be for v7.1.38 and previous only
                 if (line.Contains(":Starting Unit")) return LogLineType.WorkUnitWorking;
                 if (line.Contains(":*------------------------------*")) return LogLineType.WorkUnitCoreStart;

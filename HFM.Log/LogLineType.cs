@@ -110,7 +110,7 @@ namespace HFM.Log
         /// <returns>true if <paramref name="obj" /> and this instance are the same type and represent the same value; otherwise, false.</returns>
         public override bool Equals(object obj)
         {
-            if (ReferenceEquals(null, obj)) return false;
+            if (obj is null) return false;
             return obj is LogLineType other && Equals(other);
         }
 
