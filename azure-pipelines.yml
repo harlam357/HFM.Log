@@ -57,21 +57,21 @@ stages:
         ArtifactName: 'drop'
         publishLocation: 'Container'
 
-# - stage: Deploy
-#   jobs:
-#   - deployment: NuGet_org
-#     pool:
-#       vmImage: 'windows-latest'
-#     environment: 'NuGet_org'
-#     strategy:
-#       runOnce:
-#         deploy:
-#           steps:
-#           - task: NuGetToolInstaller@1
+- stage: Deploy
+  jobs:
+  - deployment: NuGet_org
+    pool:
+      vmImage: 'windows-latest'
+    environment: 'NuGet_org'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: NuGetToolInstaller@1
 
-#           - task: NuGetCommand@2
-#             inputs:
-#               command: 'push'
-#               packagesToPush: '$(Pipeline.Workspace)/**/*.nupkg;!$(Pipeline.Workspace)/**/*.symbols.nupkg'
-#               nuGetFeedType: 'external'
-#               publishFeedCredentials: 'NuGet.org'
+          - task: NuGetCommand@2
+            inputs:
+              command: 'push'
+              packagesToPush: '$(Pipeline.Workspace)/**/*.nupkg;!$(Pipeline.Workspace)/**/*.symbols.nupkg'
+              nuGetFeedType: 'external'
+              publishFeedCredentials: 'NuGet.org'
