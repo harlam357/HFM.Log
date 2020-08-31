@@ -57,7 +57,7 @@ namespace HFM.Log
         protected override UnitRunData OnGetUnitRunData(UnitRun unitRun)
         {
             var unitRunData = new FahClientUnitRunData();
-            var frameDataDictionary = new Dictionary<int, WorkUnitFrameData>();
+            var frames = new Dictionary<int, LogLineFrameData>();
             foreach (var line in unitRun.LogLines)
             {
                 switch (line.LineType)
@@ -74,11 +74,11 @@ namespace HFM.Log
                         if (line.Data != null && !(line.Data is LogLineDataParserError))
                         {
                             unitRunData.FramesObserved++;
-                            if (line.Data is WorkUnitFrameData frameData)
+                            if (line.Data is LogLineFrameData frameData)
                             {
                                 // Make a copy so UnitRunData is not holding a reference to the same 
                                 // WorkUnitFrameData instance as the LogLine it was sourced from.
-                                frameDataDictionary.TryAdd(frameData.ID, new WorkUnitFrameData(frameData));
+                                frames.TryAdd(frameData.ID, new LogLineFrameData(frameData));
                             }
                         }
                         break;
@@ -89,7 +89,7 @@ namespace HFM.Log
                         }
                         break;
                     case LogLineType.WorkUnitProject:
-                        var projectData = (WorkUnitProjectData)line.Data;
+                        var projectData = (LogLineProjectData)line.Data;
                         unitRunData.ProjectID = projectData.ProjectID;
                         unitRunData.ProjectRun = projectData.ProjectRun;
                         unitRunData.ProjectClone = projectData.ProjectClone;
@@ -105,8 +105,8 @@ namespace HFM.Log
                         break;
                 }
             }
-            Internal.CommonRunDataAggregator.CalculateFrameDataDurations(frameDataDictionary);
-            unitRunData.FrameDataDictionary = frameDataDictionary;
+            Internal.CommonRunDataAggregator.CalculateFrameDataDurations(frames);
+            unitRunData.Frames = frames;
             return unitRunData;
         }
     }

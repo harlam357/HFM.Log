@@ -226,9 +226,9 @@ namespace HFM.Log.Tool
                         {
                             sb.AppendLine("expectedUnitRunData.WorkUnitResult = WorkUnitResult.None;");
                         }
-                        sb.AppendLine((k == 0 ? "var " : String.Empty) + "frameDataDictionary = new Dictionary<int, WorkUnitFrameData>();");
+                        sb.AppendLine((k == 0 ? "var " : String.Empty) + "frames = new Dictionary<int, WorkUnitFrameData>();");
                         int frameDataCount = 0;
-                        foreach (var kvp in unitRun.Data.FrameDataDictionary)
+                        foreach (var kvp in unitRun.Data.Frames)
                         {
                             sb.AppendLine((k == 0 && frameDataCount == 0 ? "var " : String.Empty) + "frameData = new WorkUnitFrameData();");
                             sb.AppendLine("frameData.ID = " + kvp.Value.ID + ";");
@@ -236,10 +236,10 @@ namespace HFM.Log.Tool
                             sb.AppendLine("frameData.RawFramesTotal = " + kvp.Value.RawFramesTotal + ";");
                             sb.AppendLine("frameData.TimeStamp = TimeSpan.FromTicks(" + kvp.Value.TimeStamp.Ticks + ");");
                             sb.AppendLine("frameData.Duration = TimeSpan.FromTicks(" + kvp.Value.Duration.Ticks + ");");
-                            sb.AppendLine("frameDataDictionary.Add(frameData.ID, frameData);");
+                            sb.AppendLine("frames.Add(frameData.ID, frameData);");
                             frameDataCount++;
                         }
-                        sb.AppendLine("expectedUnitRunData.FrameDataDictionary = frameDataDictionary;");
+                        sb.AppendLine("expectedUnitRunData.Frames = frames;");
                         sb.AppendLine("expectedUnitRun.Data = expectedUnitRunData;");
                         sb.AppendLine("expectedSlotRun.UnitRuns.Add(expectedUnitRun);");
                         unitCount++;

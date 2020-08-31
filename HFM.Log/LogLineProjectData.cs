@@ -7,13 +7,13 @@ namespace HFM.Log
     /// <summary>
     /// Represents Folding@Home project data gathered from a <see cref="LogLine"/> object.
     /// </summary>
-    public class WorkUnitProjectData
+    public class LogLineProjectData
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="WorkUnitProjectData"/> class.
+        /// Initializes a new instance of the <see cref="LogLineProjectData"/> class.
         /// </summary>
         /// <param name="other">The other instance from which data will be copied.</param>
-        public WorkUnitProjectData(WorkUnitProjectData other)
+        public LogLineProjectData(LogLineProjectData other)
         {
             if (other == null) return;
 
@@ -24,13 +24,13 @@ namespace HFM.Log
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="WorkUnitProjectData"/> class.
+        /// Initializes a new instance of the <see cref="LogLineProjectData"/> class.
         /// </summary>
         /// <param name="projectID">The project ID (Number).</param>
         /// <param name="run">The project ID (Run).</param>
         /// <param name="clone">The project ID (Clone).</param>
         /// <param name="gen">The project ID (Gen).</param>
-        public WorkUnitProjectData(int projectID, int run, int clone, int gen)
+        public LogLineProjectData(int projectID, int run, int clone, int gen)
         {
             ProjectID = projectID;
             ProjectRun = run;
@@ -59,9 +59,9 @@ namespace HFM.Log
         public int ProjectGen { get; set; }
 
         /// <summary>
-        /// Returns a string that represents the current <see cref="WorkUnitProjectData"/> object.
+        /// Returns a string that represents the current <see cref="LogLineProjectData"/> object.
         /// </summary>
-        /// <returns>A string that represents the current <see cref="WorkUnitProjectData"/> object.</returns>
+        /// <returns>A string that represents the current <see cref="LogLineProjectData"/> object.</returns>
         public override string ToString()
         {
             return String.Format(CultureInfo.InvariantCulture, "Project: {0} (Run {1}, Clone {2}, Gen {3})",

@@ -14,17 +14,17 @@ namespace HFM.Log
         {
             internal static void AddToDictionary(IDictionary<LogLineType, LogLineDataParserFunction> dictionary)
             {
-                dictionary.Add(LogLineType.WorkUnitProject, ParseWorkUnitProject);
-                dictionary.Add(LogLineType.WorkUnitFrame, ParseWorkUnitFrame);
+                dictionary.Add(LogLineType.WorkUnitProject, ParseLogLineProject);
+                dictionary.Add(LogLineType.WorkUnitFrame, ParseLogLineFrame);
                 dictionary.Add(LogLineType.WorkUnitCoreShutdown, ParseWorkUnitCoreShutdown);
             }
 
-            internal static WorkUnitProjectData ParseWorkUnitProject(LogLine logLine)
+            internal static LogLineProjectData ParseLogLineProject(LogLine logLine)
             {
                 Match projectIdMatch;
                 if ((projectIdMatch = FahLogRegex.Common.ProjectIdRegex.Match(logLine.Raw)).Success)
                 {
-                    return new WorkUnitProjectData(
+                    return new LogLineProjectData(
                        Int32.Parse(projectIdMatch.Groups["ProjectNumber"].Value, CultureInfo.InvariantCulture),
                        Int32.Parse(projectIdMatch.Groups["Run"].Value, CultureInfo.InvariantCulture),
                        Int32.Parse(projectIdMatch.Groups["Clone"].Value, CultureInfo.InvariantCulture),
@@ -35,9 +35,9 @@ namespace HFM.Log
                 return null;
             }
 
-            internal static WorkUnitFrameData ParseWorkUnitFrame(LogLine logLine)
+            internal static LogLineFrameData ParseLogLineFrame(LogLine logLine)
             {
-                WorkUnitFrameData frameData = GetFrameData(logLine);
+                LogLineFrameData frameData = GetFrameData(logLine);
                 if (frameData != null)
                 {
                     return frameData;
@@ -47,14 +47,14 @@ namespace HFM.Log
                 return frameData;
             }
 
-            private static WorkUnitFrameData GetFrameData(LogLine logLine)
+            private static LogLineFrameData GetFrameData(LogLine logLine)
             {
                 Debug.Assert(logLine != null);
 
                 Match framesCompleted = FahLogRegex.Common.FramesCompletedRegex.Match(logLine.Raw);
                 if (framesCompleted.Success)
                 {
-                    var frame = new WorkUnitFrameData();
+                    var frame = new LogLineFrameData();
 
                     if (Int32.TryParse(framesCompleted.Result("${Completed}"), out var result))
                     {
@@ -110,14 +110,14 @@ namespace HFM.Log
                 return null;
             }
 
-            private static WorkUnitFrameData GetGpuFrameData(LogLine logLine)
+            private static LogLineFrameData GetGpuFrameData(LogLine logLine)
             {
                 Debug.Assert(logLine != null);
 
                 Match framesCompletedGpu = FahLogRegex.Common.FramesCompletedGpuRegex.Match(logLine.Raw);
                 if (framesCompletedGpu.Success)
                 {
-                    var frame = new WorkUnitFrameData();
+                    var frame = new LogLineFrameData();
 
                     frame.RawFramesComplete = Int32.Parse(framesCompletedGpu.Result("${Percent}"), CultureInfo.InvariantCulture);
                     frame.RawFramesTotal = 100; //Instance.CurrentProtein.Frames

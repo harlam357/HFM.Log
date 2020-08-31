@@ -1,18 +1,17 @@
-﻿
-using System;
+﻿using System;
 
 using NUnit.Framework;
 
 namespace HFM.Log
 {
     [TestFixture]
-    public class WorkUnitFrameDataTests
+    public class LogLineFrameDataTests
     {
         [Test]
-        public void WorkUnitFrameData_CopyConstructor_Test()
+        public void LogLineFrameData_CopyConstructor_Test()
         {
             // Arrange
-            var data = new WorkUnitFrameData
+            var data = new LogLineFrameData
             {
                 ID = 1,
                 RawFramesComplete = 10000,
@@ -21,7 +20,7 @@ namespace HFM.Log
                 Duration = TimeSpan.FromMinutes(2)
             };
             // Act
-            var copy = new WorkUnitFrameData(data);
+            var copy = new LogLineFrameData(data);
             // Assert
             Assert.AreEqual(data.ID, copy.ID);
             Assert.AreEqual(data.RawFramesComplete, copy.RawFramesComplete);
@@ -31,10 +30,10 @@ namespace HFM.Log
         }
 
         [Test]
-        public void WorkUnitFrameData_CopyConstructor_OtherIsNull_Test()
+        public void LogLineFrameData_CopyConstructor_OtherIsNull_Test()
         {
             // Act
-            var copy = new WorkUnitFrameData(null);
+            var copy = new LogLineFrameData(null);
             // Assert
             Assert.AreEqual(0, copy.ID);
             Assert.AreEqual(0, copy.RawFramesComplete);

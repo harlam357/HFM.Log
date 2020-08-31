@@ -23,7 +23,7 @@ namespace HFM.Log
                 ProjectClone = 3,
                 ProjectGen = 4,
                 WorkUnitResult = WorkUnitResult.FINISHED_UNIT,
-                FrameDataDictionary = new Dictionary<int, WorkUnitFrameData> { { 1, new WorkUnitFrameData { ID = 1 } } }
+                Frames = new Dictionary<int, LogLineFrameData> { { 1, new LogLineFrameData { ID = 1 } } }
             };
             // Act
             var copy = new FahClientUnitRunData(data);
@@ -35,9 +35,9 @@ namespace HFM.Log
             Assert.AreEqual(data.ProjectClone, copy.ProjectClone);
             Assert.AreEqual(data.ProjectGen, copy.ProjectGen);
             Assert.AreEqual(data.WorkUnitResult, copy.WorkUnitResult);
-            Assert.AreNotSame(data.FrameDataDictionary, copy.FrameDataDictionary);
-            Assert.AreNotSame(data.FrameDataDictionary[1], copy.FrameDataDictionary[1]);
-            Assert.AreEqual(data.FrameDataDictionary[1].ID, copy.FrameDataDictionary[1].ID);
+            Assert.AreNotSame(data.Frames, copy.Frames);
+            Assert.AreNotSame(data.Frames[1], copy.Frames[1]);
+            Assert.AreEqual(data.Frames[1].ID, copy.Frames[1].ID);
         }
 
         [Test]
@@ -53,7 +53,7 @@ namespace HFM.Log
             Assert.AreEqual(0, copy.ProjectClone);
             Assert.AreEqual(0, copy.ProjectGen);
             Assert.AreEqual(null, copy.WorkUnitResult);
-            Assert.AreEqual(null, copy.FrameDataDictionary);
+            Assert.AreEqual(null, copy.Frames);
         }
 
         [Test]
@@ -69,7 +69,7 @@ namespace HFM.Log
             Assert.AreEqual(0, copy.ProjectClone);
             Assert.AreEqual(0, copy.ProjectGen);
             Assert.AreEqual(null, copy.WorkUnitResult);
-            Assert.AreEqual(null, copy.FrameDataDictionary);
+            Assert.AreEqual(null, copy.Frames);
         }
     }
 }

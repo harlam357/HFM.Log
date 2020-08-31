@@ -1,18 +1,17 @@
-﻿
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace HFM.Log
 {
     [TestFixture]
-    public class WorkUnitProjectDataTests
+    public class LogLineProjectDataTests
     {
         [Test]
-        public void WorkUnitProjectData_CopyConstructor_Test()
+        public void LogLineProjectData_CopyConstructor_Test()
         {
             // Arrange
-            var data = new WorkUnitProjectData(1, 2, 3, 4);
+            var data = new LogLineProjectData(1, 2, 3, 4);
             // Act
-            var copy = new WorkUnitProjectData(data);
+            var copy = new LogLineProjectData(data);
             // Assert
             Assert.AreEqual(data.ProjectID, copy.ProjectID);
             Assert.AreEqual(data.ProjectRun, copy.ProjectRun);
@@ -21,10 +20,10 @@ namespace HFM.Log
         }
 
         [Test]
-        public void WorkUnitProjectData_CopyConstructor_OtherIsNull_Test()
+        public void LogLineProjectData_CopyConstructor_OtherIsNull_Test()
         {
             // Act
-            var copy = new WorkUnitProjectData(null);
+            var copy = new LogLineProjectData(null);
             // Assert
             Assert.AreEqual(0, copy.ProjectID);
             Assert.AreEqual(0, copy.ProjectRun);

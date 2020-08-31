@@ -78,14 +78,14 @@ namespace HFM.Log
                 }
             }
 
-            internal static void CalculateFrameDataDurations(IDictionary<int, WorkUnitFrameData> frameDataDictionary)
+            internal static void CalculateFrameDataDurations(IDictionary<int, LogLineFrameData> frames)
             {
-                foreach (var frameData in frameDataDictionary.Values)
+                foreach (var frameData in frames.Values)
                 {
                     int previousFrameID = frameData.ID - 1;
-                    if (frameDataDictionary.ContainsKey(previousFrameID))
+                    if (frames.ContainsKey(previousFrameID))
                     {
-                        var previousFrameData = frameDataDictionary[previousFrameID];
+                        var previousFrameData = frames[previousFrameID];
                         frameData.Duration = GetTimeSpanDelta(frameData.TimeStamp, previousFrameData.TimeStamp);
                     }
                 }

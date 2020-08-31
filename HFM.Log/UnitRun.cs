@@ -136,17 +136,17 @@ namespace HFM.Log
             ProjectClone = other.ProjectClone;
             ProjectGen = other.ProjectGen;
             WorkUnitResult = other.WorkUnitResult;
-            FrameDataDictionary = CopyFrameData(other.FrameDataDictionary);
+            Frames = CopyFrames(other.Frames);
         }
 
-        private static Dictionary<int, WorkUnitFrameData> CopyFrameData(IDictionary<int, WorkUnitFrameData> source)
+        private static Dictionary<int, LogLineFrameData> CopyFrames(IDictionary<int, LogLineFrameData> source)
         {
             if (source == null) return null;
 
-            var copy = new Dictionary<int, WorkUnitFrameData>();
+            var copy = new Dictionary<int, LogLineFrameData>();
             foreach (var kvp in source)
             {
-                var valueCopy = new WorkUnitFrameData(kvp.Value);
+                var valueCopy = new LogLineFrameData(kvp.Value);
                 copy.Add(kvp.Key, valueCopy);
             }
             return copy;
@@ -193,8 +193,8 @@ namespace HFM.Log
         public string WorkUnitResult { get; set; }
 
         /// <summary>
-        /// Gets or sets the work unit frame data dictionary.
+        /// Gets or sets the dictionary of frame data parsed from log lines.
         /// </summary>
-        public IDictionary<int, WorkUnitFrameData> FrameDataDictionary { get; set; }
+        public IDictionary<int, LogLineFrameData> Frames { get; set; }
     }
 }

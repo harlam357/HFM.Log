@@ -7,21 +7,21 @@ namespace HFM.Log
     /// <summary>
     /// Represents work unit frame data gathered from a <see cref="LogLine"/> object.
     /// </summary>
-    public class WorkUnitFrameData
+    public class LogLineFrameData
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="WorkUnitFrameData"/> class.
+        /// Initializes a new instance of the <see cref="LogLineFrameData"/> class.
         /// </summary>
-        public WorkUnitFrameData()
+        public LogLineFrameData()
         {
 
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="WorkUnitFrameData"/> class.
+        /// Initializes a new instance of the <see cref="LogLineFrameData"/> class.
         /// </summary>
         /// <param name="other">The other instance from which data will be copied.</param>
-        public WorkUnitFrameData(WorkUnitFrameData other)
+        public LogLineFrameData(LogLineFrameData other)
         {
             if (other == null) return;
 
@@ -58,9 +58,9 @@ namespace HFM.Log
         public TimeSpan Duration { get; set; }
 
         /// <summary>
-        /// Returns a string that represents the current <see cref="WorkUnitFrameData"/> object.
+        /// Returns a string that represents the current <see cref="LogLineFrameData"/> object.
         /// </summary>
-        /// <returns>A string that represents the current <see cref="WorkUnitFrameData"/> object.</returns>
+        /// <returns>A string that represents the current <see cref="LogLineFrameData"/> object.</returns>
         public override string ToString()
         {
             return String.Format(CultureInfo.InvariantCulture,
