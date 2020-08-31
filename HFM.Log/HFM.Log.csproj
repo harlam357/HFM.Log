@@ -12,11 +12,12 @@
     <Description>Log Parsing API for Folding@Home version 7 clients</Description>
     <PackageTags>Folding@Home HFM Log Parse Parsing</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>0.1.1</Version>
+    <Version>0.1.2</Version>
     <AssemblyVersion>0.1.0.0</AssemblyVersion>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\HFM.Log.xml</DocumentationFile>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\harlam357.snk</AssemblyOriginatorKeyFile>
+    <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
   <PropertyGroup Condition="'$(TF_BUILD)' == 'true'">
     <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
@@ -37,6 +38,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
