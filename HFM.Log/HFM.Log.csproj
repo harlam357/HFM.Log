@@ -12,7 +12,7 @@
     <Description>Log Parsing API for Folding@Home version 7 clients</Description>
     <PackageTags>Folding@Home HFM Log Parse Parsing</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <AssemblyVersion>0.1.0.0</AssemblyVersion>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\HFM.Log.xml</DocumentationFile>
     <SignAssembly>true</SignAssembly>
