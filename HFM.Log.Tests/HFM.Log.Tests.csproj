@@ -4,7 +4,7 @@
     <TargetFrameworks>netcoreapp3.1;net45</TargetFrameworks>
     <IsPackable>false</IsPackable>
     <RootNamespace>HFM.Log</RootNamespace>
-    <Version>0.2.0</Version>
+    <Version>0.2.1</Version>
     <AssemblyVersion>0.2.0.0</AssemblyVersion>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\harlam357.snk</AssemblyOriginatorKeyFile>

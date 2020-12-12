@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 
 using HFM.Log.Internal;
@@ -23,8 +22,10 @@ namespace HFM.Log
         {
             var clientRunData = new FahClientClientRunData();
 
-            foreach (var line in clientRun.LogLines)
+            int count = clientRun.LogLines.Count;
+            for (int i = 0; i < count; i++)
             {
+                var line = clientRun.LogLines[i];
                 switch (line.LineType)
                 {
                     case LogLineType.LogOpen:
@@ -43,8 +44,10 @@ namespace HFM.Log
         {
             var slotRunData = new FahClientSlotRunData();
 
-            foreach (var unitRun in slotRun.UnitRuns)
+            int count = slotRun.UnitRuns.Count;
+            for (int i = 0; i < count; i++)
             {
+                var unitRun = slotRun.UnitRuns[i];
                 Internal.CommonRunDataAggregator.IncrementCompletedOrFailedUnitCount(slotRunData, unitRun.Data);
             }
 
@@ -58,8 +61,11 @@ namespace HFM.Log
         {
             var unitRunData = new FahClientUnitRunData();
             var frames = new Dictionary<int, LogLineFrameData>();
-            foreach (var line in unitRun.LogLines)
+
+            int count = unitRun.LogLines.Count;
+            for (int i = 0; i < count; i++)
             {
+                var line = unitRun.LogLines[i];
                 switch (line.LineType)
                 {
                     case LogLineType.WorkUnitWorking:
