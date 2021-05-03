@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-using HFM.Log.Internal;
+using static HFM.Log.Internal.CollectionExtensions;
 
 namespace HFM.Log
 {
@@ -104,7 +104,8 @@ namespace HFM.Log
                     case LogLineType.WorkUnitCoreReturn:
                         unitRunData.WorkUnitResult = (string)line.Data;
                         if (unitRunData.WorkUnitResult == Internal.WorkUnitResult.INTERRUPTED ||
-                            unitRunData.WorkUnitResult == Internal.WorkUnitResult.UNKNOWN_ENUM)
+                            unitRunData.WorkUnitResult == Internal.WorkUnitResult.UNKNOWN_ENUM ||
+                            unitRunData.WorkUnitResult == Internal.WorkUnitResult.CORE_RESTART)
                         {
                             unitRunData.FramesObserved = 0;
                         }

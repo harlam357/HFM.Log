@@ -1,0 +1,369 @@
+21:34:54:WU01:FS00:FahCore 0x22 started
+21:34:55:WU01:FS00:0x22:*********************** Log Started 2021-04-29T21:34:54Z ***********************
+21:34:55:WU01:FS00:0x22:*************************** Core22 Folding@home Core ***************************
+21:34:55:WU01:FS00:0x22:       Core: Core22
+21:34:55:WU01:FS00:0x22:       Type: 0x22
+21:34:55:WU01:FS00:0x22:    Version: 0.0.13
+21:34:55:WU01:FS00:0x22:     Author: Joseph Coffland <joseph@cauldrondevelopment.com>
+21:34:55:WU01:FS00:0x22:  Copyright: 2020 foldingathome.org
+21:34:55:WU01:FS00:0x22:   Homepage: https://foldingathome.org/
+21:34:55:WU01:FS00:0x22:       Date: Sep 19 2020
+21:34:55:WU01:FS00:0x22:       Time: 02:35:58
+21:34:55:WU01:FS00:0x22:   Revision: 571cf95de6de2c592c7c3ed48fcfb2e33e9ea7d3
+21:34:55:WU01:FS00:0x22:     Branch: core22-0.0.13
+21:34:55:WU01:FS00:0x22:   Compiler: Visual C++ 2015
+21:34:55:WU01:FS00:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+21:34:55:WU01:FS00:0x22:             -DOPENMM_GIT_HASH="\"189320d0\""
+21:34:55:WU01:FS00:0x22:   Platform: win32 10
+21:34:55:WU01:FS00:0x22:       Bits: 64
+21:34:55:WU01:FS00:0x22:       Mode: Release
+21:34:55:WU01:FS00:0x22:Maintainers: John Chodera <john.chodera@choderalab.org> and Peter Eastman
+21:34:55:WU01:FS00:0x22:             <peastman@stanford.edu>
+21:34:55:WU01:FS00:0x22:       Args: -dir 01 -suffix 01 -version 706 -lifeline 7756 -checkpoint 15
+21:34:55:WU01:FS00:0x22:             -opencl-platform 0 -opencl-device 0 -cuda-device 0 -gpu-vendor
+21:34:55:WU01:FS00:0x22:             nvidia -gpu 0 -gpu-usage 100
+21:34:55:WU01:FS00:0x22:************************************ libFAH ************************************
+21:34:55:WU01:FS00:0x22:       Date: Sep 7 2020
+21:34:55:WU01:FS00:0x22:       Time: 19:09:56
+21:34:55:WU01:FS00:0x22:   Revision: 44301ed97b996b63fe736bb8073f22209cb2b603
+21:34:55:WU01:FS00:0x22:     Branch: HEAD
+21:34:55:WU01:FS00:0x22:   Compiler: Visual C++ 2015
+21:34:55:WU01:FS00:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+21:34:55:WU01:FS00:0x22:   Platform: win32 10
+21:34:55:WU01:FS00:0x22:       Bits: 64
+21:34:55:WU01:FS00:0x22:       Mode: Release
+21:34:55:WU01:FS00:0x22:************************************ CBang *************************************
+21:34:55:WU01:FS00:0x22:       Date: Sep 7 2020
+21:34:55:WU01:FS00:0x22:       Time: 19:08:30
+21:34:55:WU01:FS00:0x22:   Revision: 33fcfc2b3ed2195a423606a264718e31e6b3903f
+21:34:55:WU01:FS00:0x22:     Branch: HEAD
+21:34:55:WU01:FS00:0x22:   Compiler: Visual C++ 2015
+21:34:55:WU01:FS00:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+21:34:55:WU01:FS00:0x22:   Platform: win32 10
+21:34:55:WU01:FS00:0x22:       Bits: 64
+21:34:55:WU01:FS00:0x22:       Mode: Release
+21:34:55:WU01:FS00:0x22:************************************ System ************************************
+21:34:55:WU01:FS00:0x22:        CPU: Intel(R) Core(TM) i7 CPU 860 @ 2.80GHz
+21:34:55:WU01:FS00:0x22:     CPU ID: GenuineIntel Family 6 Model 30 Stepping 5
+21:34:55:WU01:FS00:0x22:       CPUs: 8
+21:34:55:WU01:FS00:0x22:     Memory: 3.99GiB
+21:34:55:WU01:FS00:0x22:Free Memory: 2.39GiB
+21:34:55:WU01:FS00:0x22:    Threads: WINDOWS_THREADS
+21:34:55:WU01:FS00:0x22: OS Version: 6.2
+21:34:55:WU01:FS00:0x22:Has Battery: false
+21:34:55:WU01:FS00:0x22: On Battery: false
+21:34:55:WU01:FS00:0x22: UTC Offset: 2
+21:34:55:WU01:FS00:0x22:        PID: 8080
+21:34:55:WU01:FS00:0x22:        CWD: C:\Users\toTOW\AppData\Roaming\FAHClient\work
+21:34:55:WU01:FS00:0x22:************************************ OpenMM ************************************
+21:34:55:WU01:FS00:0x22:   Revision: 189320d0
+21:34:55:WU01:FS00:0x22:********************************************************************************
+21:34:55:WU01:FS00:0x22:Project: 17803 (Run 0, Clone 26, Gen 39)
+21:34:55:WU01:FS00:0x22:Unit: 0x00000000000000000000000000000000
+21:34:55:WU01:FS00:0x22:Reading tar file core.xml
+21:34:55:WU01:FS00:0x22:Reading tar file integrator.xml.bz2
+21:34:55:WU01:FS00:0x22:Reading tar file state.xml.bz2
+21:34:55:WU01:FS00:0x22:Reading tar file system.xml.bz2
+21:34:55:WU01:FS00:0x22:Digital signatures verified
+21:34:55:WU01:FS00:0x22:Folding@home GPU Core22 Folding@home Core
+21:34:55:WU01:FS00:0x22:Version 0.0.13
+21:34:55:WU01:FS00:0x22:  Checkpoint write interval: 250000 steps (5%) [20 total]
+21:34:55:WU01:FS00:0x22:  JSON viewer frame write interval: 50000 steps (1%) [100 total]
+21:34:55:WU01:FS00:0x22:  XTC frame write interval: 25000 steps (0.5%) [200 total]
+21:34:55:WU01:FS00:0x22:  Global context and integrator variables write interval: disabled
+21:34:55:WU01:FS00:0x22:There are 4 platforms available.
+21:34:55:WU01:FS00:0x22:Platform 0: Reference
+21:34:55:WU01:FS00:0x22:Platform 1: CPU
+21:34:55:WU01:FS00:0x22:Platform 2: OpenCL
+21:34:56:WU01:FS00:0x22:  opencl-device 0 specified
+21:34:56:WU01:FS00:0x22:Platform 3: CUDA
+21:34:56:WU01:FS00:0x22:  cuda-device 0 specified
+21:34:58:WU01:FS00:0x22:Attempting to create CUDA context:
+21:34:58:WU01:FS00:0x22:  Configuring platform CUDA
+21:34:58:WU01:FS00:0x22:  Using CUDA and gpu 0
+21:34:58:WU01:FS00:0x22:Completed 0 out of 5000000 steps (0%)
+21:34:59:WU01:FS00:0x22:Checkpoint completed at step 0
+21:35:00:WU00:FS00:Upload 76.21%
+21:35:02:WU00:FS00:Upload complete
+21:35:02:WU00:FS00:Server responded WORK_ACK (400)
+21:35:02:WU00:FS00:Final credit estimate, 45325.00 points
+21:35:02:WU00:FS00:Cleaning up
+21:36:05:WU01:FS00:0x22:Completed 50000 out of 5000000 steps (1%)
+21:37:12:WU01:FS00:0x22:Completed 100000 out of 5000000 steps (2%)
+21:38:18:WU01:FS00:0x22:Completed 150000 out of 5000000 steps (3%)
+21:39:25:WU01:FS00:0x22:Completed 200000 out of 5000000 steps (4%)
+21:40:31:WU01:FS00:0x22:Completed 250000 out of 5000000 steps (5%)
+21:40:32:WU01:FS00:0x22:Checkpoint completed at step 250000
+21:41:38:WU01:FS00:0x22:Completed 300000 out of 5000000 steps (6%)
+21:42:45:WU01:FS00:0x22:Completed 350000 out of 5000000 steps (7%)
+21:43:52:WU01:FS00:0x22:Completed 400000 out of 5000000 steps (8%)
+21:44:59:WU01:FS00:0x22:Completed 450000 out of 5000000 steps (9%)
+21:46:05:WU01:FS00:0x22:Completed 500000 out of 5000000 steps (10%)
+21:46:06:WU01:FS00:0x22:Checkpoint completed at step 500000
+21:47:12:WU01:FS00:0x22:Completed 550000 out of 5000000 steps (11%)
+21:48:19:WU01:FS00:0x22:Completed 600000 out of 5000000 steps (12%)
+21:49:26:WU01:FS00:0x22:Completed 650000 out of 5000000 steps (13%)
+21:50:32:WU01:FS00:0x22:Completed 700000 out of 5000000 steps (14%)
+21:51:39:WU01:FS00:0x22:Completed 750000 out of 5000000 steps (15%)
+21:51:39:WU01:FS00:0x22:Checkpoint completed at step 750000
+21:52:46:WU01:FS00:0x22:Completed 800000 out of 5000000 steps (16%)
+21:53:53:WU01:FS00:0x22:Completed 850000 out of 5000000 steps (17%)
+21:54:59:WU01:FS00:0x22:Completed 900000 out of 5000000 steps (18%)
+21:56:06:WU01:FS00:0x22:Completed 950000 out of 5000000 steps (19%)
+21:57:13:WU01:FS00:0x22:Completed 1000000 out of 5000000 steps (20%)
+21:57:13:WU01:FS00:0x22:Checkpoint completed at step 1000000
+21:58:20:WU01:FS00:0x22:Completed 1050000 out of 5000000 steps (21%)
+21:59:26:WU01:FS00:0x22:Completed 1100000 out of 5000000 steps (22%)
+22:00:33:WU01:FS00:0x22:Completed 1150000 out of 5000000 steps (23%)
+22:01:40:WU01:FS00:0x22:Completed 1200000 out of 5000000 steps (24%)
+22:02:47:WU01:FS00:0x22:Completed 1250000 out of 5000000 steps (25%)
+22:02:47:WU01:FS00:0x22:Checkpoint completed at step 1250000
+22:03:53:WU01:FS00:0x22:Completed 1300000 out of 5000000 steps (26%)
+22:05:00:WU01:FS00:0x22:Completed 1350000 out of 5000000 steps (27%)
+22:06:07:WU01:FS00:0x22:Completed 1400000 out of 5000000 steps (28%)
+22:07:14:WU01:FS00:0x22:Completed 1450000 out of 5000000 steps (29%)
+22:08:21:WU01:FS00:0x22:Completed 1500000 out of 5000000 steps (30%)
+22:08:21:WU01:FS00:0x22:Checkpoint completed at step 1500000
+22:09:28:WU01:FS00:0x22:Completed 1550000 out of 5000000 steps (31%)
+22:10:35:WU01:FS00:0x22:Completed 1600000 out of 5000000 steps (32%)
+22:11:41:WU01:FS00:0x22:Completed 1650000 out of 5000000 steps (33%)
+22:12:48:WU01:FS00:0x22:Completed 1700000 out of 5000000 steps (34%)
+22:13:55:WU01:FS00:0x22:Completed 1750000 out of 5000000 steps (35%)
+22:13:55:WU01:FS00:0x22:Checkpoint completed at step 1750000
+22:15:02:WU01:FS00:0x22:Completed 1800000 out of 5000000 steps (36%)
+22:16:08:WU01:FS00:0x22:Completed 1850000 out of 5000000 steps (37%)
+22:16:45:WU01:FS00:0x22:An exception occurred at step 1877479: Particle coordinate is nan
+22:16:45:WU01:FS00:0x22:ERROR:98: Attempting to restart from last good checkpoint by restarting core.
+22:16:45:WU01:FS00:0x22:Folding@home Core Shutdown: CORE_RESTART
+22:16:45:WARNING:WU01:FS00:FahCore returned: CORE_RESTART (98 = 0x62)
+22:16:46:WU01:FS00:Starting
+22:16:46:WU01:FS00:Running FahCore: "C:\Program Files\FAHClient/FAHCoreWrapper.exe" C:\Users\toTOW\AppData\Roaming\FAHClient\cores/cores.foldingathome.org/win/64bit/22-0.0.13/Core_22.fah/FahCore_22.exe -dir 01 -suffix 01 -version 706 -lifeline 6848 -checkpoint 15 -opencl-platform 0 -opencl-device 0 -cuda-device 0 -gpu-vendor nvidia -gpu 0 -gpu-usage 100
+22:16:46:WU01:FS00:Started FahCore on PID 6596
+22:16:46:WU01:FS00:Core PID:3100
+22:16:46:WU01:FS00:FahCore 0x22 started
+22:16:46:WU01:FS00:0x22:*********************** Log Started 2021-04-29T22:16:46Z ***********************
+22:16:46:WU01:FS00:0x22:*************************** Core22 Folding@home Core ***************************
+22:16:46:WU01:FS00:0x22:       Core: Core22
+22:16:46:WU01:FS00:0x22:       Type: 0x22
+22:16:46:WU01:FS00:0x22:    Version: 0.0.13
+22:16:46:WU01:FS00:0x22:     Author: Joseph Coffland <joseph@cauldrondevelopment.com>
+22:16:46:WU01:FS00:0x22:  Copyright: 2020 foldingathome.org
+22:16:46:WU01:FS00:0x22:   Homepage: https://foldingathome.org/
+22:16:46:WU01:FS00:0x22:       Date: Sep 19 2020
+22:16:46:WU01:FS00:0x22:       Time: 02:35:58
+22:16:46:WU01:FS00:0x22:   Revision: 571cf95de6de2c592c7c3ed48fcfb2e33e9ea7d3
+22:16:46:WU01:FS00:0x22:     Branch: core22-0.0.13
+22:16:46:WU01:FS00:0x22:   Compiler: Visual C++ 2015
+22:16:46:WU01:FS00:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+22:16:46:WU01:FS00:0x22:             -DOPENMM_GIT_HASH="\"189320d0\""
+22:16:46:WU01:FS00:0x22:   Platform: win32 10
+22:16:46:WU01:FS00:0x22:       Bits: 64
+22:16:46:WU01:FS00:0x22:       Mode: Release
+22:16:46:WU01:FS00:0x22:Maintainers: John Chodera <john.chodera@choderalab.org> and Peter Eastman
+22:16:46:WU01:FS00:0x22:             <peastman@stanford.edu>
+22:16:46:WU01:FS00:0x22:       Args: -dir 01 -suffix 01 -version 706 -lifeline 6596 -checkpoint 15
+22:16:46:WU01:FS00:0x22:             -opencl-platform 0 -opencl-device 0 -cuda-device 0 -gpu-vendor
+22:16:46:WU01:FS00:0x22:             nvidia -gpu 0 -gpu-usage 100
+22:16:46:WU01:FS00:0x22:************************************ libFAH ************************************
+22:16:46:WU01:FS00:0x22:       Date: Sep 7 2020
+22:16:46:WU01:FS00:0x22:       Time: 19:09:56
+22:16:46:WU01:FS00:0x22:   Revision: 44301ed97b996b63fe736bb8073f22209cb2b603
+22:16:46:WU01:FS00:0x22:     Branch: HEAD
+22:16:46:WU01:FS00:0x22:   Compiler: Visual C++ 2015
+22:16:46:WU01:FS00:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+22:16:46:WU01:FS00:0x22:   Platform: win32 10
+22:16:46:WU01:FS00:0x22:       Bits: 64
+22:16:46:WU01:FS00:0x22:       Mode: Release
+22:16:46:WU01:FS00:0x22:************************************ CBang *************************************
+22:16:46:WU01:FS00:0x22:       Date: Sep 7 2020
+22:16:46:WU01:FS00:0x22:       Time: 19:08:30
+22:16:46:WU01:FS00:0x22:   Revision: 33fcfc2b3ed2195a423606a264718e31e6b3903f
+22:16:46:WU01:FS00:0x22:     Branch: HEAD
+22:16:46:WU01:FS00:0x22:   Compiler: Visual C++ 2015
+22:16:46:WU01:FS00:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+22:16:46:WU01:FS00:0x22:   Platform: win32 10
+22:16:46:WU01:FS00:0x22:       Bits: 64
+22:16:46:WU01:FS00:0x22:       Mode: Release
+22:16:46:WU01:FS00:0x22:************************************ System ************************************
+22:16:46:WU01:FS00:0x22:        CPU: Intel(R) Core(TM) i7 CPU 860 @ 2.80GHz
+22:16:46:WU01:FS00:0x22:     CPU ID: GenuineIntel Family 6 Model 30 Stepping 5
+22:16:46:WU01:FS00:0x22:       CPUs: 8
+22:16:46:WU01:FS00:0x22:     Memory: 3.99GiB
+22:16:46:WU01:FS00:0x22:Free Memory: 2.31GiB
+22:16:46:WU01:FS00:0x22:    Threads: WINDOWS_THREADS
+22:16:46:WU01:FS00:0x22: OS Version: 6.2
+22:16:46:WU01:FS00:0x22:Has Battery: false
+22:16:46:WU01:FS00:0x22: On Battery: false
+22:16:46:WU01:FS00:0x22: UTC Offset: 2
+22:16:46:WU01:FS00:0x22:        PID: 3100
+22:16:46:WU01:FS00:0x22:        CWD: C:\Users\toTOW\AppData\Roaming\FAHClient\work
+22:16:46:WU01:FS00:0x22:************************************ OpenMM ************************************
+22:16:46:WU01:FS00:0x22:   Revision: 189320d0
+22:16:46:WU01:FS00:0x22:********************************************************************************
+22:16:46:WU01:FS00:0x22:Project: 17803 (Run 0, Clone 26, Gen 39)
+22:16:46:WU01:FS00:0x22:Unit: 0x00000000000000000000000000000000
+22:16:46:WU01:FS00:0x22:Digital signatures verified
+22:16:46:WU01:FS00:0x22:Folding@home GPU Core22 Folding@home Core
+22:16:46:WU01:FS00:0x22:Version 0.0.13
+22:16:46:WU01:FS00:0x22:  Checkpoint write interval: 250000 steps (5%) [20 total]
+22:16:46:WU01:FS00:0x22:  JSON viewer frame write interval: 50000 steps (1%) [100 total]
+22:16:46:WU01:FS00:0x22:  XTC frame write interval: 25000 steps (0.5%) [200 total]
+22:16:46:WU01:FS00:0x22:  Global context and integrator variables write interval: disabled
+22:16:46:WU01:FS00:0x22:There are 4 platforms available.
+22:16:46:WU01:FS00:0x22:Platform 0: Reference
+22:16:46:WU01:FS00:0x22:Platform 1: CPU
+22:16:46:WU01:FS00:0x22:Platform 2: OpenCL
+22:16:46:WU01:FS00:0x22:  opencl-device 0 specified
+22:16:46:WU01:FS00:0x22:Platform 3: CUDA
+22:16:46:WU01:FS00:0x22:  cuda-device 0 specified
+22:16:48:WU01:FS00:0x22:Attempting to create CUDA context:
+22:16:48:WU01:FS00:0x22:  Configuring platform CUDA
+22:16:49:WU01:FS00:0x22:  Using CUDA and gpu 0
+22:16:49:WU01:FS00:0x22:Completed 1750000 out of 5000000 steps (35%)
+22:17:56:WU01:FS00:0x22:Completed 1800000 out of 5000000 steps (36%)
+22:19:02:WU01:FS00:0x22:Completed 1850000 out of 5000000 steps (37%)
+22:19:34:Removing old file 'configs/config-20210412-171806.xml'
+22:19:34:Saving configuration to config.xml
+22:19:34:<config>
+22:19:34:  <!-- Network -->
+22:19:34:  <proxy v=':8080'/>
+22:19:34:
+22:19:34:  <!-- Remote Command Server -->
+22:19:34:  <password v='*****'/>
+22:19:34:
+22:19:34:  <!-- Slot Control -->
+22:19:34:  <power v='full'/>
+22:19:34:
+22:19:34:  <!-- User Information -->
+22:19:34:  <passkey v='*****'/>
+22:19:34:  <team v='51'/>
+22:19:34:  <user v='toTOW'/>
+22:19:34:
+22:19:34:  <!-- Folding Slots -->
+22:19:34:  <slot id='0' type='GPU'>
+22:19:34:    <core-priority v='low'/>
+22:19:34:    <max-packet-size v='big'/>
+22:19:34:    <paused v='False'/>
+22:19:34:    <pci-bus v='1'/>
+22:19:34:    <pci-slot v='0'/>
+22:19:34:    <project-key v='17804'/>
+22:19:34:  </slot>
+22:19:34:</config>
+22:19:56:Removing old file 'configs/config-20210412-171831.xml'
+22:19:56:Saving configuration to config.xml
+22:19:56:<config>
+22:19:56:  <!-- Network -->
+22:19:56:  <proxy v=':8080'/>
+22:19:56:
+22:19:56:  <!-- Remote Command Server -->
+22:19:56:  <password v='*****'/>
+22:19:56:
+22:19:56:  <!-- Slot Control -->
+22:19:56:  <power v='full'/>
+22:19:56:
+22:19:56:  <!-- User Information -->
+22:19:56:  <passkey v='*****'/>
+22:19:56:  <team v='51'/>
+22:19:56:  <user v='toTOW'/>
+22:19:56:
+22:19:56:  <!-- Folding Slots -->
+22:19:56:  <slot id='0' type='GPU'>
+22:19:56:    <core-priority v='low'/>
+22:19:56:    <max-packet-size v='big'/>
+22:19:56:    <paused v='False'/>
+22:19:56:    <pci-bus v='1'/>
+22:19:56:    <pci-slot v='0'/>
+22:19:56:    <project-key v='17804'/>
+22:19:56:  </slot>
+22:19:56:</config>
+22:20:09:WU01:FS00:0x22:Completed 1900000 out of 5000000 steps (38%)
+22:21:16:WU01:FS00:0x22:Completed 1950000 out of 5000000 steps (39%)
+22:22:23:WU01:FS00:0x22:Completed 2000000 out of 5000000 steps (40%)
+22:22:23:WU01:FS00:0x22:Checkpoint completed at step 2000000
+22:23:30:WU01:FS00:0x22:Completed 2050000 out of 5000000 steps (41%)
+22:24:36:WU01:FS00:0x22:Completed 2100000 out of 5000000 steps (42%)
+22:25:43:WU01:FS00:0x22:Completed 2150000 out of 5000000 steps (43%)
+22:26:49:WU01:FS00:0x22:Completed 2200000 out of 5000000 steps (44%)
+22:27:56:WU01:FS00:0x22:Completed 2250000 out of 5000000 steps (45%)
+22:27:56:WU01:FS00:0x22:Checkpoint completed at step 2250000
+22:29:03:WU01:FS00:0x22:Completed 2300000 out of 5000000 steps (46%)
+22:30:10:WU01:FS00:0x22:Completed 2350000 out of 5000000 steps (47%)
+22:31:17:WU01:FS00:0x22:Completed 2400000 out of 5000000 steps (48%)
+22:32:23:WU01:FS00:0x22:Completed 2450000 out of 5000000 steps (49%)
+22:33:30:WU01:FS00:0x22:Completed 2500000 out of 5000000 steps (50%)
+22:33:30:WU01:FS00:0x22:Checkpoint completed at step 2500000
+22:34:37:WU01:FS00:0x22:Completed 2550000 out of 5000000 steps (51%)
+22:35:44:WU01:FS00:0x22:Completed 2600000 out of 5000000 steps (52%)
+22:36:50:WU01:FS00:0x22:Completed 2650000 out of 5000000 steps (53%)
+22:37:57:WU01:FS00:0x22:Completed 2700000 out of 5000000 steps (54%)
+22:39:03:WU01:FS00:0x22:Completed 2750000 out of 5000000 steps (55%)
+22:39:04:WU01:FS00:0x22:Checkpoint completed at step 2750000
+22:40:11:WU01:FS00:0x22:Completed 2800000 out of 5000000 steps (56%)
+22:41:17:WU01:FS00:0x22:Completed 2850000 out of 5000000 steps (57%)
+22:42:24:WU01:FS00:0x22:Completed 2900000 out of 5000000 steps (58%)
+22:43:31:WU01:FS00:0x22:Completed 2950000 out of 5000000 steps (59%)
+22:44:37:WU01:FS00:0x22:Completed 3000000 out of 5000000 steps (60%)
+22:44:38:WU01:FS00:0x22:Checkpoint completed at step 3000000
+22:45:44:WU01:FS00:0x22:Completed 3050000 out of 5000000 steps (61%)
+22:46:51:WU01:FS00:0x22:Completed 3100000 out of 5000000 steps (62%)
+22:47:57:WU01:FS00:0x22:Completed 3150000 out of 5000000 steps (63%)
+22:49:04:WU01:FS00:0x22:Completed 3200000 out of 5000000 steps (64%)
+22:50:11:WU01:FS00:0x22:Completed 3250000 out of 5000000 steps (65%)
+22:50:11:WU01:FS00:0x22:Checkpoint completed at step 3250000
+22:51:18:WU01:FS00:0x22:Completed 3300000 out of 5000000 steps (66%)
+22:52:25:WU01:FS00:0x22:Completed 3350000 out of 5000000 steps (67%)
+22:53:31:WU01:FS00:0x22:Completed 3400000 out of 5000000 steps (68%)
+22:54:38:WU01:FS00:0x22:Completed 3450000 out of 5000000 steps (69%)
+22:55:45:WU01:FS00:0x22:Completed 3500000 out of 5000000 steps (70%)
+22:55:45:WU01:FS00:0x22:Checkpoint completed at step 3500000
+22:56:52:WU01:FS00:0x22:Completed 3550000 out of 5000000 steps (71%)
+22:57:59:WU01:FS00:0x22:Completed 3600000 out of 5000000 steps (72%)
+22:59:05:WU01:FS00:0x22:Completed 3650000 out of 5000000 steps (73%)
+23:00:12:WU01:FS00:0x22:Completed 3700000 out of 5000000 steps (74%)
+23:01:19:WU01:FS00:0x22:Completed 3750000 out of 5000000 steps (75%)
+23:01:19:WU01:FS00:0x22:Checkpoint completed at step 3750000
+23:02:26:WU01:FS00:0x22:Completed 3800000 out of 5000000 steps (76%)
+23:03:32:WU01:FS00:0x22:Completed 3850000 out of 5000000 steps (77%)
+23:04:39:WU01:FS00:0x22:Completed 3900000 out of 5000000 steps (78%)
+23:05:46:WU01:FS00:0x22:Completed 3950000 out of 5000000 steps (79%)
+23:06:53:WU01:FS00:0x22:Completed 4000000 out of 5000000 steps (80%)
+23:06:53:WU01:FS00:0x22:Checkpoint completed at step 4000000
+23:07:59:WU01:FS00:0x22:Completed 4050000 out of 5000000 steps (81%)
+23:09:06:WU01:FS00:0x22:Completed 4100000 out of 5000000 steps (82%)
+23:10:13:WU01:FS00:0x22:Completed 4150000 out of 5000000 steps (83%)
+23:11:19:WU01:FS00:0x22:Completed 4200000 out of 5000000 steps (84%)
+23:12:26:WU01:FS00:0x22:Completed 4250000 out of 5000000 steps (85%)
+23:12:26:WU01:FS00:0x22:Checkpoint completed at step 4250000
+23:13:33:WU01:FS00:0x22:Completed 4300000 out of 5000000 steps (86%)
+23:14:40:WU01:FS00:0x22:Completed 4350000 out of 5000000 steps (87%)
+23:15:46:WU01:FS00:0x22:Completed 4400000 out of 5000000 steps (88%)
+23:16:53:WU01:FS00:0x22:Completed 4450000 out of 5000000 steps (89%)
+23:18:00:WU01:FS00:0x22:Completed 4500000 out of 5000000 steps (90%)
+23:18:00:WU01:FS00:0x22:Checkpoint completed at step 4500000
+23:19:07:WU01:FS00:0x22:Completed 4550000 out of 5000000 steps (91%)
+23:20:13:WU01:FS00:0x22:Completed 4600000 out of 5000000 steps (92%)
+23:21:20:WU01:FS00:0x22:Completed 4650000 out of 5000000 steps (93%)
+23:22:26:WU01:FS00:0x22:Completed 4700000 out of 5000000 steps (94%)
+23:23:33:WU01:FS00:0x22:Completed 4750000 out of 5000000 steps (95%)
+23:23:33:WU01:FS00:0x22:Checkpoint completed at step 4750000
+23:24:40:WU01:FS00:0x22:Completed 4800000 out of 5000000 steps (96%)
+23:25:47:WU01:FS00:0x22:Completed 4850000 out of 5000000 steps (97%)
+23:26:54:WU01:FS00:0x22:Completed 4900000 out of 5000000 steps (98%)
+23:28:01:WU01:FS00:0x22:Completed 4950000 out of 5000000 steps (99%)
+23:28:01:WU00:FS00:Connecting to assign1.foldingathome.org:80
+23:28:02:WU00:FS00:Assigned to work server 207.53.233.146
+23:28:02:WU00:FS00:Requesting new work unit for slot 00: gpu:1:0 GM204 [GeForce GTX 980] 4612 from 207.53.233.146
+23:28:02:WU00:FS00:Connecting to 207.53.233.146:8080
+23:28:02:WU00:FS00:Downloading 5.87MiB
+23:28:05:WU00:FS00:Download complete
+23:28:05:WU00:FS00:Received Unit: id:00 state:DOWNLOAD error:NO_ERROR project:17804 run:0 clone:0 gen:0 core:0x22 unit:0x00000000000000000000458c00000000
+23:29:08:WU01:FS00:0x22:Completed 5000000 out of 5000000 steps (100%)
+23:29:08:WU01:FS00:0x22:Average performance: 25.8683 ns/day
+23:29:08:WU01:FS00:0x22:Checkpoint completed at step 5000000
+23:29:09:WU01:FS00:0x22:Saving result file ..\logfile_01.txt
+23:29:09:WU01:FS00:0x22:Saving result file checkpointIntegrator.xml.bz2
+23:29:09:WU01:FS00:0x22:Saving result file checkpointState.xml.bz2
+23:29:09:WU01:FS00:0x22:Saving result file positions.xtc
+23:29:09:WU01:FS00:0x22:Saving result file science.log
+23:29:09:WU01:FS00:0x22:Folding@home Core Shutdown: FINISHED_UNIT
+23:29:09:WU01:FS00:FahCore returned: FINISHED_UNIT (100 = 0x64)
