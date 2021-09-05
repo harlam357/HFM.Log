@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 
 namespace HFM.Log
 {
@@ -65,22 +64,22 @@ namespace HFM.Log
         /// Line indicates work unit processing is complete (FahClient clients only)
         /// </summary>
         public const int WorkUnitCleaningUp = 13;
-        /// <summary>
-        /// Line indicates a client-core communications error (Legacy clients only)
-        /// </summary>
-        public const int ClientCoreCommunicationsError = 14;
-        /// <summary>
-        /// Line indicates a client-core communications error which caused the client to shutdown (Legacy clients only)
-        /// </summary>
-        public const int ClientCoreCommunicationsErrorShutdown = 15;
-        /// <summary>
-        /// Line indicates the client has encountered too many EARLY_UNIT_END results from client core processes and will pause activity for 24 hours (Legacy clients only)
-        /// </summary>
-        public const int ClientEuePauseState = 16;
-        /// <summary>
-        /// Line indicates the client has been shutdown (Legacy clients only)
-        /// </summary>
-        public const int ClientShutdown = 17;
+        ///// <summary>
+        ///// Line indicates a client-core communications error (Legacy clients only)
+        ///// </summary>
+        //public const int ClientCoreCommunicationsError = 14;
+        ///// <summary>
+        ///// Line indicates a client-core communications error which caused the client to shutdown (Legacy clients only)
+        ///// </summary>
+        //public const int ClientCoreCommunicationsErrorShutdown = 15;
+        ///// <summary>
+        ///// Line indicates the client has encountered too many EARLY_UNIT_END results from client core processes and will pause activity for 24 hours (Legacy clients only)
+        ///// </summary>
+        //public const int ClientEuePauseState = 16;
+        ///// <summary>
+        ///// Line indicates the client has been shutdown (Legacy clients only)
+        ///// </summary>
+        //public const int ClientShutdown = 17;
         /// <summary>
         /// Line indicates the client detected too many failures to run the same work unit (FahClient clients only)
         /// </summary>
