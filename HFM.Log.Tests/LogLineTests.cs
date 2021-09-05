@@ -38,13 +38,13 @@ namespace HFM.Log
             // Act
             logLine.Raw = "Foo";
             logLine.Index = 1;
-            logLine.LineType = LogLineType.ClientArguments;
+            logLine.LineType = LogLineType.LogOpen;
             logLine.TimeStamp = TimeSpan.FromMinutes(1);
             logLine.Data = "Foo";
             // Assert
             Assert.AreEqual("Foo", logLine.Raw);
             Assert.AreEqual(1, logLine.Index);
-            Assert.AreEqual(LogLineType.ClientArguments, (int)logLine.LineType);
+            Assert.AreEqual(LogLineType.LogOpen, (int)logLine.LineType);
             Assert.AreEqual(TimeSpan.FromMinutes(1), logLine.TimeStamp);
             Assert.AreEqual("Foo", logLine.Data);
         }
@@ -53,11 +53,11 @@ namespace HFM.Log
         public void LogLine_Create_VerifyPropertyValuesAfterCreate_Test()
         {
             // Arrange & Act
-            var logLine = new LogLine("Foo", 1, LogLineType.ClientArguments, TimeSpan.FromMinutes(1), "Foo");
+            var logLine = new LogLine("Foo", 1, LogLineType.LogOpen, TimeSpan.FromMinutes(1), "Foo");
             // Assert
             Assert.AreEqual("Foo", logLine.Raw);
             Assert.AreEqual(1, logLine.Index);
-            Assert.AreEqual(LogLineType.ClientArguments, (int)logLine.LineType);
+            Assert.AreEqual(LogLineType.LogOpen, (int)logLine.LineType);
             Assert.AreEqual(TimeSpan.FromMinutes(1), logLine.TimeStamp);
             Assert.AreEqual("Foo", logLine.Data);
         }
@@ -70,13 +70,13 @@ namespace HFM.Log
             // Act
             logLine.Raw = "Foo";
             logLine.Index = 1;
-            logLine.LineType = LogLineType.ClientArguments;
+            logLine.LineType = LogLineType.LogOpen;
             logLine.TimeStamp = TimeSpan.FromMinutes(1);
             logLine.Data = "Foo";
             // Assert
             Assert.AreEqual("Foo", logLine.Raw);
             Assert.AreEqual(1, logLine.Index);
-            Assert.AreEqual(LogLineType.ClientArguments, (int)logLine.LineType);
+            Assert.AreEqual(LogLineType.LogOpen, (int)logLine.LineType);
             Assert.AreEqual(TimeSpan.FromMinutes(1), logLine.TimeStamp);
             Assert.AreEqual("Foo", logLine.Data);
         }
@@ -85,11 +85,11 @@ namespace HFM.Log
         public void LazyLogLine_Create_VerifyPropertyValuesAfterCreate_Test()
         {
             // Arrange & Act
-            var logLine = new LazyLogLine("Foo", 1, LogLineType.ClientArguments, line => TimeSpan.FromMinutes(1), line => "Foo");
+            var logLine = new LazyLogLine("Foo", 1, LogLineType.LogOpen, line => TimeSpan.FromMinutes(1), line => "Foo");
             // Assert
             Assert.AreEqual("Foo", logLine.Raw);
             Assert.AreEqual(1, logLine.Index);
-            Assert.AreEqual(LogLineType.ClientArguments, (int)logLine.LineType);
+            Assert.AreEqual(LogLineType.LogOpen, (int)logLine.LineType);
             Assert.AreEqual(TimeSpan.FromMinutes(1), logLine.TimeStamp);
             Assert.AreEqual("Foo", logLine.Data);
         }

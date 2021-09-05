@@ -21,10 +21,10 @@ namespace HFM.Log
         /// Line indicates the client is sending work to server (FahClient and Legacy clients)
         /// </summary>
         public const int ClientSendWorkToServer = 2;
-        /// <summary>
-        /// Line contains client argument information (Legacy clients only)
-        /// </summary>
-        public const int ClientArguments = 3;
+        ///// <summary>
+        ///// Line contains client argument information (Legacy clients only)
+        ///// </summary>
+        //public const int ClientArguments = 3;
         /// <summary>
         /// Line indicates the client is attempting to get a work packet (FahClient and Legacy clients)
         /// </summary>
