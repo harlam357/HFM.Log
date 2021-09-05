@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
@@ -74,16 +73,7 @@ namespace HFM.Log
                         return null;
                     }
 
-                    string percentString = framesCompleted.Groups["Percent"].Value;
-
-                    Match match = FahLogRegex.Common.ProgressPercentRegex.Match(percentString);
-
-                    int framePercent;
-                    if (match.Success)
-                    {
-                        framePercent = Int32.Parse(match.Groups["Percent"].Value, CultureInfo.InvariantCulture);
-                    }
-                    else
+                    if (!Int32.TryParse(framesCompleted.Groups["Percent"].Value, out var framePercent))
                     {
                         return null;
                     }

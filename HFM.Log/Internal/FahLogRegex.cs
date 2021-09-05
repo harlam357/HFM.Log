@@ -1,5 +1,4 @@
-﻿
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace HFM.Log.Internal
 {
@@ -28,13 +27,7 @@ namespace HFM.Log.Internal
             /// Regular Expression to match Standard and SMP Clients Frame Completion Lines (Gromacs Style).
             /// </summary>
             internal static readonly Regex FramesCompletedRegex =
-               new Regex("\\[?(?<Timestamp>\\d{2}:\\d{2}:\\d{2})[\\]|:].*Completed (?<Completed>.*) out of (?<Total>.*) steps {1,2}\\((?<Percent>.*)\\)", Options);
-
-            /// <summary>
-            /// Regular Expression to match progress percent.
-            /// </summary>
-            internal static readonly Regex ProgressPercentRegex =
-               new Regex("(?<Percent>.*)%", Options);
+               new Regex("\\[?(?<Timestamp>\\d{2}:\\d{2}:\\d{2})[\\]|:].*Completed (?<Completed>.*) out of (?<Total>.*) steps {1,2}\\((?<Percent>.*)%\\)", Options);
 
             /// <summary>
             /// Regular Expression to match GPU2 Client Frame Completion Lines
