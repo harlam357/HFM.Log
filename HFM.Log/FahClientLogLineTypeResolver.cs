@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 
 namespace HFM.Log
 {
@@ -22,8 +21,6 @@ namespace HFM.Log
             if (line.Contains(":Sending unit results:")) return LogLineType.ClientSendWorkToServer;
             if (line.Contains(":Requesting new work unit for slot")) return LogLineType.ClientAttemptGetWorkPacket;
             if (line.Trim().EndsWith(":Starting", StringComparison.InvariantCulture)) return LogLineType.WorkUnitWorking;
-            // Appears to be for v7.1.38 and previous only
-            if (line.Contains(":Starting Unit")) return LogLineType.WorkUnitWorking;
             if (line.Contains(":*------------------------------*")) return LogLineType.WorkUnitCoreStart;
             if (line.Contains(":Version")) return LogLineType.WorkUnitCoreVersion;
             // Ignore v7 client version information by looking for this pattern beyond index 8 - see TestFiles\Client_v7_14\log.txt for an example
@@ -32,12 +29,15 @@ namespace HFM.Log
             if (line.Contains(":Completed ")) return LogLineType.WorkUnitFrame;
             if (line.Contains(":Folding@home Core Shutdown:")) return LogLineType.WorkUnitCoreShutdown;
             if (System.Text.RegularExpressions.Regex.IsMatch(line, "FahCore returned: ")) return LogLineType.WorkUnitCoreReturn;
+            if (line.Contains(":Cleaning up")) return LogLineType.WorkUnitCleaningUp;
+            if (line.Contains(":Too many errors, failing")) return LogLineType.WorkUnitTooManyErrors;
+
+            // Appears to be for v7.1.38 and previous only
+            if (line.Contains(":Starting Unit")) return LogLineType.WorkUnitWorking;
             // Appears to be for v7.1.38 and previous only
             if (System.Text.RegularExpressions.Regex.IsMatch(line, "FahCore, running Unit \\d{2}, returned: ")) return LogLineType.WorkUnitCoreReturn;
-            if (line.Contains(":Cleaning up")) return LogLineType.WorkUnitCleaningUp;
             // Appears to be for v7.1.38 and previous only
             if (line.Contains(":Cleaning up Unit")) return LogLineType.WorkUnitCleaningUp;
-            if (line.Contains(":Too many errors, failing")) return LogLineType.WorkUnitTooManyErrors;
 
             return LogLineType.None;
         }
