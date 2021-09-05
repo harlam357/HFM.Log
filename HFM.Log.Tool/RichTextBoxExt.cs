@@ -67,37 +67,25 @@ namespace HFM.Log.Tool
 
         private static string GetLineColor(LogLine line)
         {
-            if (line.LineType == LogLineType.None)
+            switch (line.LineType)
             {
-                return @"\cf5 ";
+                case LogLineType.None:
+                    return @"\cf5 ";
+                case LogLineType.WorkUnitFrame:
+                    return @"\cf1 ";
+                case LogLineType.WorkUnitCoreShutdown:
+                case LogLineType.WorkUnitCoreReturn:
+                    return @"\cf2 ";
+                default:
+                    return line.Data is LogLineDataParserError
+                        ? @"\cf3 "
+                        : @"\cf4 ";
             }
-
-            if (line.Data is LogLineDataParserError)
-            {
-                return @"\cf3 ";
-            }
-
-            if (line.LineType == LogLineType.WorkUnitFrame)
-            {
-                return @"\cf1 ";
-            }
-
-            if (line.LineType == LogLineType.WorkUnitCoreShutdown ||
-                line.LineType == LogLineType.WorkUnitCoreReturn)
-            {
-                return @"\cf2 ";
-            }
-
-            return @"\cf4 ";
         }
-
-        #region Native Scroll Messages (don't call under Mono)
 
         public void ScrollToLine(int lineNumber)
         {
             NativeMethods.SendMessage(Handle, NativeMethods.EM_LINESCROLL, new IntPtr(0), new IntPtr(lineNumber));
         }
-
-        #endregion
     }
 }
