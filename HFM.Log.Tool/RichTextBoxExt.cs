@@ -82,11 +82,7 @@ namespace HFM.Log.Tool
                 return @"\cf1 ";
             }
 
-            if (line.LineType == LogLineType.ClientShutdown ||
-                line.LineType == LogLineType.ClientCoreCommunicationsError ||
-                line.LineType == LogLineType.ClientCoreCommunicationsErrorShutdown ||
-                line.LineType == LogLineType.ClientEuePauseState ||
-                line.LineType == LogLineType.WorkUnitCoreShutdown ||
+            if (line.LineType == LogLineType.WorkUnitCoreShutdown ||
                 line.LineType == LogLineType.WorkUnitCoreReturn)
             {
                 return @"\cf2 ";
