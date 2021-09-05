@@ -120,8 +120,7 @@ namespace HFM.Log
                     var frame = new LogLineFrameData();
 
                     frame.RawFramesComplete = Int32.Parse(framesCompletedGpu.Groups["Percent"].Value, CultureInfo.InvariantCulture);
-                    frame.RawFramesTotal = 100; //Instance.CurrentProtein.Frames
-                                                // I get this from the project data but what's the point. 100% is 100%.
+                    frame.RawFramesTotal = 100;
 
                     if (logLine.TimeStamp != null)
                     {
@@ -141,7 +140,7 @@ namespace HFM.Log
                 if ((coreShutdownMatch = FahLogRegex.Common.CoreShutdownRegex.Match(logLine.Raw)).Success)
                 {
                     // remove any carriage returns from fahclient log lines - 12/30/11
-                    string unitResultValue = coreShutdownMatch.Result("${UnitResult}").Replace("\r", String.Empty);
+                    string unitResultValue = coreShutdownMatch.Groups["UnitResult"].Value.Replace("\r", String.Empty);
                     return unitResultValue;
                 }
 
