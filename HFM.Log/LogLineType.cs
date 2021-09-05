@@ -33,10 +33,10 @@ namespace HFM.Log
         /// Line indicates the client has begun working on a work unit (FahClient and Legacy clients)
         /// </summary>
         public const int WorkUnitWorking = 5;
-        /// <summary>
-        /// Line "*------------------------------*" indicates the client core process has begun working on a work unit (FahClient and Legacy clients)
-        /// </summary>
-        public const int WorkUnitCoreStart = 6;
+        ///// <summary>
+        ///// Line "*------------------------------*" indicates the client core process has begun working on a work unit (FahClient and Legacy clients)
+        ///// </summary>
+        //public const int WorkUnitCoreStart = 6;
         /// <summary>
         /// Line contains core executable version information (FahClient and Legacy clients)
         /// </summary>
