@@ -8023,6 +8023,24 @@ namespace HFM.Log
         }
 
         [Test]
+        public void FahClientLog_Read_Client_v7_BAD_FRAME_CHECKSUM_Test()
+        {
+            // Act
+            var fahLog = FahClientLog.Read(TestDataReader.ReadStream("Client_v7_BAD_FRAME_CHECKSUM_log.txt"));
+            // Assert
+            Assert.AreEqual(1, fahLog.ClientRuns.Count);
+            var clientRun = fahLog.ClientRuns.First();
+            Assert.AreEqual(1, clientRun.SlotRuns.Count);
+            var slotRun = clientRun.SlotRuns[1];
+            Assert.AreEqual(2, slotRun.UnitRuns.Count);
+            Assert.AreEqual(1, slotRun.Data.FailedUnits);
+            var unitRun = slotRun.UnitRuns[0];
+            Assert.AreEqual(0, unitRun.Data.Frames.Count);
+            Assert.AreEqual(0, unitRun.Data.FramesObserved);
+            Assert.AreEqual(WorkUnitResult.BAD_FRAME_CHECKSUM, unitRun.Data.WorkUnitResult);
+        }
+
+        [Test]
         public void FahClientLog_Read_Client_v7_CORE_RESTART_Test()
         {
             // Act

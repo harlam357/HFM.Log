@@ -18,6 +18,7 @@
     <EmbeddedResource Include="TestData\Client_v7_16_log.txt" />
     <EmbeddedResource Include="TestData\Client_v7_17_log.txt" />
     <EmbeddedResource Include="TestData\Client_v7_18_log.txt" />
+    <EmbeddedResource Include="TestData\Client_v7_BAD_FRAME_CHECKSUM_log.txt" />
     <EmbeddedResource Include="TestData\Client_v7_CORE_RESTART_log.txt" />
     <EmbeddedResource Include="TestData\Client_v7_fr-FR_log.txt" />
   </ItemGroup>

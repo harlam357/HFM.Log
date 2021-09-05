@@ -1,0 +1,281 @@
+*********************** Log Started 2021-07-10T23:47:36Z ***********************
+23:47:36:******************************* libFAH ********************************
+23:47:36:           Date: Oct 20 2020
+23:47:36:           Time: 13:36:55
+23:47:36:       Revision: 5ca109d295a6245e2a2f590b3d0085ad5e567aeb
+23:47:36:         Branch: master
+23:47:36:       Compiler: Visual C++ 2015
+23:47:36:        Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Zc:throwingNew /MT
+23:47:36:       Platform: win32 10
+23:47:36:           Bits: 32
+23:47:36:           Mode: Release
+23:47:36:****************************** FAHClient ******************************
+23:47:36:        Version: 7.6.21
+23:47:36:         Author: Joseph Coffland <joseph@cauldrondevelopment.com>
+23:47:36:      Copyright: 2020 foldingathome.org
+23:47:36:       Homepage: https://foldingathome.org/
+23:47:36:           Date: Oct 20 2020
+23:47:36:           Time: 13:41:04
+23:47:36:       Revision: 6efbf0e138e22d3963e6a291f78dcb9c6422a278
+23:47:36:         Branch: master
+23:47:36:       Compiler: Visual C++ 2015
+23:47:36:        Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Zc:throwingNew /MT
+23:47:36:       Platform: win32 10
+23:47:36:           Bits: 32
+23:47:36:           Mode: Release
+23:47:36:           Args: --config C:\\Users\\harlarw\\AppData\\Roaming\\FAHClient\\config.xml
+23:47:36:         Config: C:\\Users\\harlarw\\AppData\\Roaming\\FAHClient\\config.xml
+23:47:36:******************************** CBang ********************************
+23:47:36:           Date: Oct 20 2020
+23:47:36:           Time: 11:36:18
+23:47:36:       Revision: 7e4ce85225d7eaeb775e87c31740181ca603de60
+23:47:36:         Branch: master
+23:47:36:       Compiler: Visual C++ 2015
+23:47:36:        Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Zc:throwingNew /MT
+23:47:36:       Platform: win32 10
+23:47:36:           Bits: 32
+23:47:36:           Mode: Release
+23:47:36:******************************* System ********************************
+23:47:36:            CPU: AMD Ryzen 5 3600 6-Core Processor
+23:47:36:         CPU ID: AuthenticAMD Family 23 Model 113 Stepping 0
+23:47:36:           CPUs: 12
+23:47:36:         Memory: 15.91GiB
+23:47:36:    Free Memory: 13.46GiB
+23:47:36:        Threads: WINDOWS_THREADS
+23:47:36:     OS Version: 6.2
+23:47:36:    Has Battery: false
+23:47:36:     On Battery: false
+23:47:36:     UTC Offset: -5
+23:47:36:            PID: 1284
+23:47:36:            CWD: C:\\Users\\harlarw\\AppData\\Roaming\\FAHClient
+23:47:36:  Win32 Service: false
+23:47:36:             OS: Windows 10 Enterprise
+23:47:36:        OS Arch: AMD64
+23:47:36:           GPUs: 1
+23:47:36:          GPU 0: Bus:8 Slot:0 Func:0 NVIDIA:7 TU116 [GeForce GTX 1660 Ti]
+23:47:36:  CUDA Device 0: Platform:0 Device:0 Bus:8 Slot:0 Compute:7.5 Driver:11.1
+23:47:36:OpenCL Device 0: Platform:0 Device:0 Bus:8 Slot:0 Compute:1.2 Driver:456.71
+23:47:36:***********************************************************************
+23:47:36:<config>
+23:47:36:  <!-- HTTP Server -->
+23:47:36:  <allow v='127.0.0.1 192.168.1.0/24'/>
+23:47:36:
+23:47:36:  <!-- Network -->
+23:47:36:  <proxy v=':8080'/>
+23:47:36:
+23:47:36:  <!-- Remote Command Server -->
+23:47:36:  <password v='*****'/>
+23:47:36:
+23:47:36:  <!-- Slot Control -->
+23:47:36:  <power v='full'/>
+23:47:36:
+23:47:36:  <!-- User Information -->
+23:47:36:  <passkey v='*****'/>
+23:47:36:  <team v='32'/>
+23:47:36:  <user v='harlam357'/>
+23:47:36:
+23:47:36:  <!-- Folding Slots -->
+23:47:36:  <slot id='0' type='CPU'>
+23:47:36:    <client-type v='advanced'/>
+23:47:36:    <max-packet-size v='big'/>
+23:47:36:    <pause-on-start v='True'/>
+23:47:36:  </slot>
+23:47:36:  <slot id='1' type='GPU'>
+23:47:36:    <client-type v='advanced'/>
+23:47:36:    <max-packet-size v='big'/>
+23:47:36:    <pause-on-start v='True'/>
+23:47:36:    <pci-bus v='8'/>
+23:47:36:    <pci-slot v='0'/>
+23:47:36:  </slot>
+23:47:36:</config>
+23:47:36:Trying to access database...
+23:47:36:Successfully acquired database lock
+23:47:36:FS00:Initialized folding slot 00: cpu:11
+23:47:36:FS01:Initialized folding slot 01: gpu:8:0 TU116 [GeForce GTX 1660 Ti]
+23:48:05:FS01:Unpaused
+23:48:05:WU00:FS01:Starting
+23:48:05:WU00:FS01:Running FahCore: \"C:\\Program Files (x86)\\FAHClient/FAHCoreWrapper.exe\" C:\\Users\\harlarw\\AppData\\Roaming\\FAHClient\\cores/cores.foldingathome.org/win/64bit/22-0.0.13/Core_22.fah/FahCore_22.exe -dir 00 -suffix 01 -version 706 -lifeline 1284 -checkpoint 15 -opencl-platform 0 -opencl-device 0 -cuda-device 0 -gpu-vendor nvidia -gpu 0 -gpu-usage 100
+23:48:05:WU00:FS01:Started FahCore on PID 8616
+23:48:05:WU00:FS01:Core PID:6704
+23:48:05:WU00:FS01:FahCore 0x22 started
+23:48:05:WU00:FS01:0x22:*********************** Log Started 2021-07-10T23:48:05Z ***********************
+23:48:05:WU00:FS01:0x22:*************************** Core22 Folding@home Core ***************************
+23:48:05:WU00:FS01:0x22:       Core: Core22
+23:48:05:WU00:FS01:0x22:       Type: 0x22
+23:48:05:WU00:FS01:0x22:    Version: 0.0.13
+23:48:05:WU00:FS01:0x22:     Author: Joseph Coffland <joseph@cauldrondevelopment.com>
+23:48:05:WU00:FS01:0x22:  Copyright: 2020 foldingathome.org
+23:48:05:WU00:FS01:0x22:   Homepage: https://foldingathome.org/
+23:48:05:WU00:FS01:0x22:       Date: Sep 19 2020
+23:48:05:WU00:FS01:0x22:       Time: 02:35:58
+23:48:05:WU00:FS01:0x22:   Revision: 571cf95de6de2c592c7c3ed48fcfb2e33e9ea7d3
+23:48:05:WU00:FS01:0x22:     Branch: core22-0.0.13
+23:48:05:WU00:FS01:0x22:   Compiler: Visual C++ 2015
+23:48:05:WU00:FS01:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+23:48:05:WU00:FS01:0x22:             -DOPENMM_GIT_HASH=\"\\\"189320d0\\\"\"
+23:48:05:WU00:FS01:0x22:   Platform: win32 10
+23:48:05:WU00:FS01:0x22:       Bits: 64
+23:48:05:WU00:FS01:0x22:       Mode: Release
+23:48:05:WU00:FS01:0x22:Maintainers: John Chodera <john.chodera@choderalab.org> and Peter Eastman
+23:48:05:WU00:FS01:0x22:             <peastman@stanford.edu>
+23:48:05:WU00:FS01:0x22:       Args: -dir 00 -suffix 01 -version 706 -lifeline 8616 -checkpoint 15
+23:48:05:WU00:FS01:0x22:             -opencl-platform 0 -opencl-device 0 -cuda-device 0 -gpu-vendor
+23:48:05:WU00:FS01:0x22:             nvidia -gpu 0 -gpu-usage 100
+23:48:05:WU00:FS01:0x22:************************************ libFAH ************************************
+23:48:05:WU00:FS01:0x22:       Date: Sep 7 2020
+23:48:05:WU00:FS01:0x22:       Time: 19:09:56
+23:48:05:WU00:FS01:0x22:   Revision: 44301ed97b996b63fe736bb8073f22209cb2b603
+23:48:05:WU00:FS01:0x22:     Branch: HEAD
+23:48:05:WU00:FS01:0x22:   Compiler: Visual C++ 2015
+23:48:05:WU00:FS01:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+23:48:05:WU00:FS01:0x22:   Platform: win32 10
+23:48:05:WU00:FS01:0x22:       Bits: 64
+23:48:05:WU00:FS01:0x22:       Mode: Release
+23:48:05:WU00:FS01:0x22:************************************ CBang *************************************
+23:48:05:WU00:FS01:0x22:       Date: Sep 7 2020
+23:48:05:WU00:FS01:0x22:       Time: 19:08:30
+23:48:05:WU00:FS01:0x22:   Revision: 33fcfc2b3ed2195a423606a264718e31e6b3903f
+23:48:05:WU00:FS01:0x22:     Branch: HEAD
+23:48:05:WU00:FS01:0x22:   Compiler: Visual C++ 2015
+23:48:05:WU00:FS01:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+23:48:05:WU00:FS01:0x22:   Platform: win32 10
+23:48:05:WU00:FS01:0x22:       Bits: 64
+23:48:05:WU00:FS01:0x22:       Mode: Release
+23:48:05:WU00:FS01:0x22:************************************ System ************************************
+23:48:05:WU00:FS01:0x22:        CPU: AMD Ryzen 5 3600 6-Core Processor
+23:48:05:WU00:FS01:0x22:     CPU ID: AuthenticAMD Family 23 Model 113 Stepping 0
+23:48:05:WU00:FS01:0x22:       CPUs: 12
+23:48:05:WU00:FS01:0x22:     Memory: 15.91GiB
+23:48:05:WU00:FS01:0x22:Free Memory: 13.26GiB
+23:48:05:WU00:FS01:0x22:    Threads: WINDOWS_THREADS
+23:48:05:WU00:FS01:0x22: OS Version: 6.2
+23:48:05:WU00:FS01:0x22:Has Battery: false
+23:48:05:WU00:FS01:0x22: On Battery: false
+23:48:05:WU00:FS01:0x22: UTC Offset: -5
+23:48:05:WU00:FS01:0x22:        PID: 6704
+23:48:05:WU00:FS01:0x22:        CWD: C:\\Users\\harlarw\\AppData\\Roaming\\FAHClient\\work
+23:48:05:WU00:FS01:0x22:************************************ OpenMM ************************************
+23:48:05:WU00:FS01:0x22:   Revision: 189320d0
+23:48:05:WU00:FS01:0x22:********************************************************************************
+23:48:05:WU00:FS01:0x22:Project: 18202 (Run 15643, Clone 3, Gen 10)
+23:48:05:WU00:FS01:0x22:Unit: 0x00000000000000000000000000000000
+23:48:05:WU00:FS01:0x22:Digital signatures verified
+23:48:05:WU00:FS01:0x22:Folding@home GPU Core22 Folding@home Core
+23:48:05:WU00:FS01:0x22:Version 0.0.13
+23:48:05:WU00:FS01:0x22:  Checkpoint write interval: 25000 steps (2%) [50 total]
+23:48:05:WU00:FS01:0x22:  JSON viewer frame write interval: 12500 steps (1%) [100 total]
+23:48:05:WU00:FS01:0x22:  XTC frame write interval: 20000 steps (1.6%) [62 total]
+23:48:05:WU00:FS01:0x22:  Global context and integrator variables write interval: disabled
+23:48:05:WU00:FS01:0x22:There are 4 platforms available.
+23:48:05:WU00:FS01:0x22:Platform 0: Reference
+23:48:05:WU00:FS01:0x22:Platform 1: CPU
+23:48:05:WU00:FS01:0x22:Platform 2: OpenCL
+23:48:05:WU00:FS01:0x22:  opencl-device 0 specified
+23:48:05:WU00:FS01:0x22:Platform 3: CUDA
+23:48:05:WU00:FS01:0x22:  cuda-device 0 specified
+23:48:19:WU00:FS01:0x22:Attempting to create CUDA context:
+23:48:19:WU00:FS01:0x22:  Configuring platform CUDA
+23:48:23:WU00:FS01:0x22:  Using CUDA and gpu 0
+23:48:24:WU00:FS01:0x22:ERROR:Guru Meditation #23305e641beee1be.3f1650fea344e039 (44952735.44952735) '00/01/checkpoint'
+23:48:24:WARNING:WU00:FS01:FahCore returned: BAD_FRAME_CHECKSUM (112 = 0x70)
+23:48:24:WARNING:WU00:FS01:Fatal error, dumping
+23:48:24:WU00:FS01:Sending unit results: id:00 state:SEND error:DUMPED project:18202 run:15643 clone:3 gen:10 core:0x22 unit:0x000000030000000a0000471a00003d1b
+23:48:24:WU00:FS01:Connecting to 128.252.203.11:8080
+23:48:24:WU00:FS01:Server responded WORK_ACK (400)
+23:48:24:WU00:FS01:Cleaning up
+23:48:24:WU01:FS01:Connecting to assign1.foldingathome.org:80
+23:48:25:WU01:FS01:Assigned to work server 128.252.203.11
+23:48:25:WU01:FS01:Requesting new work unit for slot 01: gpu:8:0 TU116 [GeForce GTX 1660 Ti] from 128.252.203.11
+23:48:25:WU01:FS01:Connecting to 128.252.203.11:8080
+23:48:35:WU01:FS01:Downloading 26.52MiB
+23:48:39:WU01:FS01:Download complete
+23:48:39:WU01:FS01:Received Unit: id:01 state:DOWNLOAD error:NO_ERROR project:18202 run:15796 clone:3 gen:12 core:0x22 unit:0x000000030000000c0000471a00003db4
+23:48:39:WU01:FS01:Starting
+23:48:39:WU01:FS01:Running FahCore: \"C:\\Program Files (x86)\\FAHClient/FAHCoreWrapper.exe\" C:\\Users\\harlarw\\AppData\\Roaming\\FAHClient\\cores/cores.foldingathome.org/win/64bit/22-0.0.13/Core_22.fah/FahCore_22.exe -dir 01 -suffix 01 -version 706 -lifeline 1284 -checkpoint 15 -opencl-platform 0 -opencl-device 0 -cuda-device 0 -gpu-vendor nvidia -gpu 0 -gpu-usage 100
+23:48:39:WU01:FS01:Started FahCore on PID 7964
+23:48:39:WU01:FS01:Core PID:4112
+23:48:39:WU01:FS01:FahCore 0x22 started
+23:48:40:WU01:FS01:0x22:*********************** Log Started 2021-07-10T23:48:39Z ***********************
+23:48:40:WU01:FS01:0x22:*************************** Core22 Folding@home Core ***************************
+23:48:40:WU01:FS01:0x22:       Core: Core22
+23:48:40:WU01:FS01:0x22:       Type: 0x22
+23:48:40:WU01:FS01:0x22:    Version: 0.0.13
+23:48:40:WU01:FS01:0x22:     Author: Joseph Coffland <joseph@cauldrondevelopment.com>
+23:48:40:WU01:FS01:0x22:  Copyright: 2020 foldingathome.org
+23:48:40:WU01:FS01:0x22:   Homepage: https://foldingathome.org/
+23:48:40:WU01:FS01:0x22:       Date: Sep 19 2020
+23:48:40:WU01:FS01:0x22:       Time: 02:35:58
+23:48:40:WU01:FS01:0x22:   Revision: 571cf95de6de2c592c7c3ed48fcfb2e33e9ea7d3
+23:48:40:WU01:FS01:0x22:     Branch: core22-0.0.13
+23:48:40:WU01:FS01:0x22:   Compiler: Visual C++ 2015
+23:48:40:WU01:FS01:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+23:48:40:WU01:FS01:0x22:             -DOPENMM_GIT_HASH=\"\\\"189320d0\\\"\"
+23:48:40:WU01:FS01:0x22:   Platform: win32 10
+23:48:40:WU01:FS01:0x22:       Bits: 64
+23:48:40:WU01:FS01:0x22:       Mode: Release
+23:48:40:WU01:FS01:0x22:Maintainers: John Chodera <john.chodera@choderalab.org> and Peter Eastman
+23:48:40:WU01:FS01:0x22:             <peastman@stanford.edu>
+23:48:40:WU01:FS01:0x22:       Args: -dir 01 -suffix 01 -version 706 -lifeline 7964 -checkpoint 15
+23:48:40:WU01:FS01:0x22:             -opencl-platform 0 -opencl-device 0 -cuda-device 0 -gpu-vendor
+23:48:40:WU01:FS01:0x22:             nvidia -gpu 0 -gpu-usage 100
+23:48:40:WU01:FS01:0x22:************************************ libFAH ************************************
+23:48:40:WU01:FS01:0x22:       Date: Sep 7 2020
+23:48:40:WU01:FS01:0x22:       Time: 19:09:56
+23:48:40:WU01:FS01:0x22:   Revision: 44301ed97b996b63fe736bb8073f22209cb2b603
+23:48:40:WU01:FS01:0x22:     Branch: HEAD
+23:48:40:WU01:FS01:0x22:   Compiler: Visual C++ 2015
+23:48:40:WU01:FS01:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+23:48:40:WU01:FS01:0x22:   Platform: win32 10
+23:48:40:WU01:FS01:0x22:       Bits: 64
+23:48:40:WU01:FS01:0x22:       Mode: Release
+23:48:40:WU01:FS01:0x22:************************************ CBang *************************************
+23:48:40:WU01:FS01:0x22:       Date: Sep 7 2020
+23:48:40:WU01:FS01:0x22:       Time: 19:08:30
+23:48:40:WU01:FS01:0x22:   Revision: 33fcfc2b3ed2195a423606a264718e31e6b3903f
+23:48:40:WU01:FS01:0x22:     Branch: HEAD
+23:48:40:WU01:FS01:0x22:   Compiler: Visual C++ 2015
+23:48:40:WU01:FS01:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+23:48:40:WU01:FS01:0x22:   Platform: win32 10
+23:48:40:WU01:FS01:0x22:       Bits: 64
+23:48:40:WU01:FS01:0x22:       Mode: Release
+23:48:40:WU01:FS01:0x22:************************************ System ************************************
+23:48:40:WU01:FS01:0x22:        CPU: AMD Ryzen 5 3600 6-Core Processor
+23:48:40:WU01:FS01:0x22:     CPU ID: AuthenticAMD Family 23 Model 113 Stepping 0
+23:48:40:WU01:FS01:0x22:       CPUs: 12
+23:48:40:WU01:FS01:0x22:     Memory: 15.91GiB
+23:48:40:WU01:FS01:0x22:Free Memory: 13.22GiB
+23:48:40:WU01:FS01:0x22:    Threads: WINDOWS_THREADS
+23:48:40:WU01:FS01:0x22: OS Version: 6.2
+23:48:40:WU01:FS01:0x22:Has Battery: false
+23:48:40:WU01:FS01:0x22: On Battery: false
+23:48:40:WU01:FS01:0x22: UTC Offset: -5
+23:48:40:WU01:FS01:0x22:        PID: 4112
+23:48:40:WU01:FS01:0x22:        CWD: C:\\Users\\harlarw\\AppData\\Roaming\\FAHClient\\work
+23:48:40:WU01:FS01:0x22:************************************ OpenMM ************************************
+23:48:40:WU01:FS01:0x22:   Revision: 189320d0
+23:48:40:WU01:FS01:0x22:********************************************************************************
+23:48:40:WU01:FS01:0x22:Project: 18202 (Run 15796, Clone 3, Gen 12)
+23:48:40:WU01:FS01:0x22:Unit: 0x00000000000000000000000000000000
+23:48:40:WU01:FS01:0x22:Reading tar file core.xml
+23:48:40:WU01:FS01:0x22:Reading tar file integrator.xml
+23:48:40:WU01:FS01:0x22:Reading tar file state.xml
+23:48:40:WU01:FS01:0x22:Reading tar file system.xml
+23:48:41:WU01:FS01:0x22:Digital signatures verified
+23:48:41:WU01:FS01:0x22:Folding@home GPU Core22 Folding@home Core
+23:48:41:WU01:FS01:0x22:Version 0.0.13
+23:48:41:WU01:FS01:0x22:  Checkpoint write interval: 25000 steps (2%) [50 total]
+23:48:41:WU01:FS01:0x22:  JSON viewer frame write interval: 12500 steps (1%) [100 total]
+23:48:41:WU01:FS01:0x22:  XTC frame write interval: 20000 steps (1.6%) [62 total]
+23:48:41:WU01:FS01:0x22:  Global context and integrator variables write interval: disabled
+23:48:41:WU01:FS01:0x22:There are 4 platforms available.
+23:48:41:WU01:FS01:0x22:Platform 0: Reference
+23:48:41:WU01:FS01:0x22:Platform 1: CPU
+23:48:41:WU01:FS01:0x22:Platform 2: OpenCL
+23:48:41:WU01:FS01:0x22:  opencl-device 0 specified
+23:48:41:WU01:FS01:0x22:Platform 3: CUDA
+23:48:41:WU01:FS01:0x22:  cuda-device 0 specified
+23:48:53:WU01:FS01:0x22:Attempting to create CUDA context:
+23:48:53:WU01:FS01:0x22:  Configuring platform CUDA
+23:49:00:WU01:FS01:0x22:  Using CUDA and gpu 0
+23:49:00:WU01:FS01:0x22:Completed 0 out of 1250000 steps (0%)
+23:49:01:WU01:FS01:0x22:Checkpoint completed at step 0

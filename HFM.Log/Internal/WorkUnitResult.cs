@@ -11,6 +11,7 @@ namespace HFM.Log.Internal
       internal const string BAD_WORK_UNIT = "BAD_WORK_UNIT";
       internal const string UNKNOWN_ENUM = "UNKNOWN_ENUM";
       internal const string CORE_RESTART = "CORE_RESTART";
+      internal const string BAD_FRAME_CHECKSUM = "BAD_FRAME_CHECKSUM";
 
       //internal const string CORE_OUTDATED = "CORE_OUTDATED";
       //internal const string GPU_MEMTEST_ERROR = "GPU_MEMTEST_ERROR";

@@ -19,7 +19,7 @@ namespace HFM.Log
 
         internal static StringBuilder ReadStringBuilder(string resourceName)
         {
-#if NETCOREAPP3_1
+#if NET5_0_OR_GREATER
             return GetResourceStringBuilder(resourceName);
 #else
             return new StringBuilder(ReadString(resourceName));
@@ -33,7 +33,7 @@ namespace HFM.Log
             return Assembly.GetExecutingAssembly().GetManifestResourceStream($"{TestDataNamespace}.{resourceName}");
         }
 
-#if NETCOREAPP3_1
+#if NET5_0_OR_GREATER
         private static StringBuilder GetResourceStringBuilder(string resourceName)
         {
             // build StringBuilder from Stream with no intermediate heap allocations

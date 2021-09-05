@@ -72,6 +72,7 @@ namespace HFM.Log
                     case WorkUnitResult.EARLY_UNIT_END:
                     case WorkUnitResult.UNSTABLE_MACHINE:
                     case WorkUnitResult.BAD_WORK_UNIT:
+                    case WorkUnitResult.BAD_FRAME_CHECKSUM:
                         return true;
                     default:
                         return false;
