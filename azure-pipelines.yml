@@ -64,6 +64,7 @@ stages:
     pool:
       vmImage: 'windows-latest'
     environment: 'NuGet_org'
+    condition: eq(variables['build.sourceBranchName'], 'master')
     strategy:
       runOnce:
         deploy:
