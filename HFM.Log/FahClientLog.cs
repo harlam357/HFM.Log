@@ -4,7 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using HFM.Log.Internal;
+
+using static HFM.Log.Internal.CollectionExtensions;
 
 namespace HFM.Log
 {
