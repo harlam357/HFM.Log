@@ -41,10 +41,10 @@ namespace HFM.Log
         /// Line contains core executable version information (FahClient and Legacy clients)
         /// </summary>
         public const int WorkUnitCoreVersion = 7;
-        /// <summary>
-        /// Line indicates the client core process did not fail to start and is running (FahClient and Legacy clients)
-        /// </summary>
-        public const int WorkUnitRunning = 8;
+        ///// <summary>
+        ///// Line indicates the client core process did not fail to start and is running (FahClient and Legacy clients)
+        ///// </summary>
+        //public const int WorkUnitRunning = 8;
         /// <summary>
         /// Line contains work unit project information (FahClient and Legacy clients)
         /// </summary>

@@ -18,12 +18,6 @@ namespace HFM.Log
         /// </summary>
         protected override LogLineType OnResolveLogLineType(string line)
         {
-            var logLineType = Internal.CommonLogLineTypeResolver.ResolveLogLineType(line);
-            if (logLineType != LogLineType.None)
-            {
-                return logLineType;
-            }
-
             if (line.Contains("*********************** Log Started")) return LogLineType.LogOpen;
             if (line.Contains(":Sending unit results:")) return LogLineType.ClientSendWorkToServer;
             if (line.Contains(":Requesting new work unit for slot")) return LogLineType.ClientAttemptGetWorkPacket;
