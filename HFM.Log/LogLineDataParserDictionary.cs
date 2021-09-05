@@ -56,7 +56,7 @@ namespace HFM.Log
                 {
                     var frame = new LogLineFrameData();
 
-                    if (Int32.TryParse(framesCompleted.Result("${Completed}"), out var result))
+                    if (Int32.TryParse(framesCompleted.Groups["Completed"].Value, out var result))
                     {
                         frame.RawFramesComplete = result;
                     }
@@ -65,7 +65,7 @@ namespace HFM.Log
                         return null;
                     }
 
-                    if (Int32.TryParse(framesCompleted.Result("${Total}"), out result))
+                    if (Int32.TryParse(framesCompleted.Groups["Total"].Value, out result))
                     {
                         frame.RawFramesTotal = result;
                     }
@@ -74,14 +74,14 @@ namespace HFM.Log
                         return null;
                     }
 
-                    string percentString = framesCompleted.Result("${Percent}");
+                    string percentString = framesCompleted.Groups["Percent"].Value;
 
                     Match match = FahLogRegex.Common.ProgressPercentRegex.Match(percentString);
 
                     int framePercent;
                     if (match.Success)
                     {
-                        framePercent = Int32.Parse(match.Result("${Percent}"), CultureInfo.InvariantCulture);
+                        framePercent = Int32.Parse(match.Groups["Percent"].Value, CultureInfo.InvariantCulture);
                     }
                     else
                     {
@@ -119,7 +119,7 @@ namespace HFM.Log
                 {
                     var frame = new LogLineFrameData();
 
-                    frame.RawFramesComplete = Int32.Parse(framesCompletedGpu.Result("${Percent}"), CultureInfo.InvariantCulture);
+                    frame.RawFramesComplete = Int32.Parse(framesCompletedGpu.Groups["Percent"].Value, CultureInfo.InvariantCulture);
                     frame.RawFramesTotal = 100; //Instance.CurrentProtein.Frames
                                                 // I get this from the project data but what's the point. 100% is 100%.
 
