@@ -13,77 +13,49 @@ namespace HFM.Log
         /// </summary>
         public const int None = 0;
         /// <summary>
-        /// Line is a log opening line containing client start date and time (FahClient and Legacy clients)
+        /// Line is a log opening line containing client start date and time.
         /// </summary>
         public const int LogOpen = 1;
         /// <summary>
-        /// Line indicates the client is sending work to server (FahClient and Legacy clients)
+        /// Line indicates the client is sending work to server.
         /// </summary>
         public const int ClientSendWorkToServer = 2;
-        ///// <summary>
-        ///// Line contains client argument information (Legacy clients only)
-        ///// </summary>
-        //public const int ClientArguments = 3;
         /// <summary>
-        /// Line indicates the client is attempting to get a work packet (FahClient and Legacy clients)
+        /// Line indicates the client is attempting to get a work packet.
         /// </summary>
-        public const int ClientAttemptGetWorkPacket = 4;
+        public const int ClientAttemptGetWorkPacket = 3;
         /// <summary>
-        /// Line indicates the client has begun working on a work unit (FahClient and Legacy clients)
+        /// Line indicates the client has begun working on a work unit.
         /// </summary>
-        public const int WorkUnitWorking = 5;
-        ///// <summary>
-        ///// Line "*------------------------------*" indicates the client core process has begun working on a work unit (FahClient and Legacy clients)
-        ///// </summary>
-        //public const int WorkUnitCoreStart = 6;
+        public const int WorkUnitWorking = 4;
         /// <summary>
-        /// Line contains core executable version information (FahClient and Legacy clients)
+        /// Line contains core executable version information.
         /// </summary>
-        public const int WorkUnitCoreVersion = 7;
-        ///// <summary>
-        ///// Line indicates the client core process did not fail to start and is running (FahClient and Legacy clients)
-        ///// </summary>
-        //public const int WorkUnitRunning = 8;
+        public const int WorkUnitCoreVersion = 5;
         /// <summary>
-        /// Line contains work unit project information (FahClient and Legacy clients)
+        /// Line contains work unit project information.
         /// </summary>
-        public const int WorkUnitProject = 9;
+        public const int WorkUnitProject = 6;
         /// <summary>
-        /// Line contains work unit frame (progress) information (FahClient and Legacy clients)
+        /// Line contains work unit frame (progress) information.
         /// </summary>
-        public const int WorkUnitFrame = 10;
+        public const int WorkUnitFrame = 7;
         /// <summary>
-        /// Line contains client core process result string (FahClient and Legacy clients)
+        /// Line contains client core process result string.
         /// </summary>
-        public const int WorkUnitCoreShutdown = 11;
+        public const int WorkUnitCoreShutdown = 8;
         /// <summary>
-        /// Line contains the client echo of the core process result string (FahClient clients only)
+        /// Line contains the client echo of the core process result string.
         /// </summary>
-        public const int WorkUnitCoreReturn = 12;
+        public const int WorkUnitCoreReturn = 9;
         /// <summary>
-        /// Line indicates work unit processing is complete (FahClient clients only)
+        /// Line indicates work unit processing is complete.
         /// </summary>
-        public const int WorkUnitCleaningUp = 13;
-        ///// <summary>
-        ///// Line indicates a client-core communications error (Legacy clients only)
-        ///// </summary>
-        //public const int ClientCoreCommunicationsError = 14;
-        ///// <summary>
-        ///// Line indicates a client-core communications error which caused the client to shutdown (Legacy clients only)
-        ///// </summary>
-        //public const int ClientCoreCommunicationsErrorShutdown = 15;
-        ///// <summary>
-        ///// Line indicates the client has encountered too many EARLY_UNIT_END results from client core processes and will pause activity for 24 hours (Legacy clients only)
-        ///// </summary>
-        //public const int ClientEuePauseState = 16;
-        ///// <summary>
-        ///// Line indicates the client has been shutdown (Legacy clients only)
-        ///// </summary>
-        //public const int ClientShutdown = 17;
+        public const int WorkUnitCleaningUp = 10;
         /// <summary>
-        /// Line indicates the client detected too many failures to run the same work unit (FahClient clients only)
+        /// Line indicates the client detected too many failures to run the same work unit.
         /// </summary>
-        public const int WorkUnitTooManyErrors = 18;
+        public const int WorkUnitTooManyErrors = 11;
 
         private readonly int _value;
 
