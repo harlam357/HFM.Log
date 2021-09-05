@@ -1,10 +1,10 @@
-
 using System;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using HFM.Log.Internal;
 
 namespace HFM.Log
 {
@@ -205,8 +205,7 @@ namespace HFM.Log
         private static FahClientUnitRun GetMostRecentUnitRun(SlotRun slotRun, int queueIndex)
         {
             return slotRun.UnitRuns
-                .Cast<FahClientUnitRun>()
-                .LastOrDefault(x => x.QueueIndex == queueIndex && !x.IsComplete);
+                .LastOrDefault<UnitRun, FahClientUnitRun>(x => x.QueueIndex == queueIndex && !x.IsComplete);
         }
 
         /// <summary>
