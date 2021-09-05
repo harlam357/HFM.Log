@@ -31,13 +31,6 @@ namespace HFM.Log
             if (line.Contains(":Cleaning up")) return LogLineType.WorkUnitCleaningUp;
             if (line.Contains(":Too many errors, failing")) return LogLineType.WorkUnitTooManyErrors;
 
-            // Appears to be for v7.1.38 and previous only
-            if (line.Contains(":Starting Unit")) return LogLineType.WorkUnitWorking;
-            // Appears to be for v7.1.38 and previous only
-            if (System.Text.RegularExpressions.Regex.IsMatch(line, "FahCore, running Unit \\d{2}, returned: ")) return LogLineType.WorkUnitCoreReturn;
-            // Appears to be for v7.1.38 and previous only
-            if (line.Contains(":Cleaning up Unit")) return LogLineType.WorkUnitCleaningUp;
-
             return LogLineType.None;
         }
     }
