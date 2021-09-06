@@ -8071,6 +8071,29 @@ namespace HFM.Log
             var slotRun1 = clientRun.SlotRuns[1];
             Assert.AreEqual(1, slotRun1.UnitRuns.Count);
         }
+
+        [Test]
+        public void FahClientLog_Read_Client_v7_INTERRUPTED_Test()
+        {
+            // Act
+            var fahLog = FahClientLog.Read(TestDataReader.ReadStream("Client_v7_INTERRUPTED_log.txt"));
+            // Assert
+            Assert.AreEqual(1, fahLog.ClientRuns.Count);
+
+            var clientRun = fahLog.ClientRuns.First();
+            Assert.AreEqual(2, clientRun.SlotRuns.Count);
+            
+            var slotRun0 = clientRun.SlotRuns[0];
+            Assert.AreEqual(5, slotRun0.UnitRuns.Count);
+
+            var interruptedUnitRun = slotRun0.UnitRuns[1];
+            Assert.AreEqual(84, interruptedUnitRun.Data.FramesObserved);
+
+            var interruptedFrames = interruptedUnitRun.Data.Frames;
+            Assert.AreNotEqual(TimeSpan.Zero, interruptedFrames[16].Duration);
+            Assert.AreEqual(TimeSpan.Zero, interruptedFrames[17].Duration);
+            Assert.AreNotEqual(TimeSpan.Zero, interruptedFrames[18].Duration);
+        }
     }
 
     // ReSharper restore InconsistentNaming

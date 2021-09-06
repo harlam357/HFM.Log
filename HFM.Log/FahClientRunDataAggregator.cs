@@ -79,13 +79,19 @@ namespace HFM.Log
                         }
                         if (line.Data != null && !(line.Data is LogLineDataParserError))
                         {
-                            unitRunData.FramesObserved++;
                             if (line.Data is LogLineFrameData frameData)
                             {
                                 // Make a copy so UnitRunData is not holding a reference to the same 
                                 // WorkUnitFrameData instance as the LogLine it was sourced from.
-                                frames.TryAdd(frameData.ID, new LogLineFrameData(frameData));
+                                var frameDataCopy = new LogLineFrameData(frameData);
+                                frames.TryAdd(frameData.ID, frameDataCopy);
+
+                                if (unitRunData.FramesObserved > 0)
+                                {
+                                    Internal.CommonRunDataAggregator.CalculateFrameDataDuration(frameDataCopy, frames);
+                                }
                             }
+                            unitRunData.FramesObserved++;
                         }
                         break;
                     case LogLineType.WorkUnitCoreVersion:
@@ -112,7 +118,6 @@ namespace HFM.Log
                         break;
                 }
             }
-            Internal.CommonRunDataAggregator.CalculateFrameDataDurations(frames);
             unitRunData.Frames = frames;
             return unitRunData;
         }
