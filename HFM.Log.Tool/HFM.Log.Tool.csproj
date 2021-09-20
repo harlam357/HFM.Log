@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
+    <Platforms>AnyCPU</Platforms>
     <TargetFramework>net45</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>hfm_48_48.ico</ApplicationIcon>
