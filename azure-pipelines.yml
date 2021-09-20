@@ -83,3 +83,4 @@ stages:
               packagesToPush: '$(Pipeline.Workspace)/**/*.nupkg;!$(Pipeline.Workspace)/**/*.symbols.nupkg'
               nuGetFeedType: 'external'
               publishFeedCredentials: 'NuGet.org'
+              allowPackageConflicts: true
