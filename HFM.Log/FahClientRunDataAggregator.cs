@@ -109,15 +109,21 @@ namespace HFM.Log
                         break;
                     case LogLineType.WorkUnitCoreReturn:
                         unitRunData.WorkUnitResult = (string)line.Data;
-                        if (unitRunData.WorkUnitResult == Internal.WorkUnitResult.INTERRUPTED ||
-                            unitRunData.WorkUnitResult == Internal.WorkUnitResult.UNKNOWN_ENUM ||
-                            unitRunData.WorkUnitResult == Internal.WorkUnitResult.CORE_RESTART)
+                        switch (unitRunData.WorkUnitResult)
                         {
-                            unitRunData.FramesObserved = 0;
+                            case Internal.WorkUnitResult.INTERRUPTED:
+                            case Internal.WorkUnitResult.UNKNOWN_ENUM:
+                                unitRunData.FramesObserved = 0;
+                                break;
+                            case Internal.WorkUnitResult.CORE_RESTART:
+                                unitRunData.FramesObserved = 0;
+                                frames.Clear();
+                                break;
                         }
                         break;
                 }
             }
+
             unitRunData.Frames = frames;
             return unitRunData;
         }

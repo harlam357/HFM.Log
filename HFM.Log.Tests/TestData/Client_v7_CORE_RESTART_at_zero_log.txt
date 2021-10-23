@@ -1,0 +1,418 @@
+18:51:27:WU01:FS00:Starting
+18:51:27:WU00:FS00:Connecting to 34.72.228.44:8080
+18:51:27:WU01:FS00:Running FahCore: D:\\FAH7/FAHCoreWrapper.exe D:\\FAH7_Data\\cores/cores.foldingathome.org/win/64bit/22-0.0.13/Core_22.fah/FahCore_22.exe -dir 01 -suffix 01 -version 706 -lifeline 1468 -checkpoint 15 -opencl-platform 0 -opencl-device 0 -cuda-device 0 -gpu-vendor nvidia -gpu 0 -gpu-usage 100
+18:51:27:WU01:FS00:Started FahCore on PID 11288
+18:51:28:WU01:FS00:Core PID:2624
+18:51:28:WU01:FS00:FahCore 0x22 started
+18:51:29:WU01:FS00:0x22:*********************** Log Started 2021-10-15T18:51:29Z ***********************
+18:51:29:WU01:FS00:0x22:*************************** Core22 Folding@home Core ***************************
+18:51:29:WU01:FS00:0x22:       Core: Core22
+18:51:29:WU01:FS00:0x22:       Type: 0x22
+18:51:29:WU01:FS00:0x22:    Version: 0.0.13
+18:51:29:WU01:FS00:0x22:     Author: Joseph Coffland <joseph@cauldrondevelopment.com>
+18:51:29:WU01:FS00:0x22:  Copyright: 2020 foldingathome.org
+18:51:29:WU01:FS00:0x22:   Homepage: https://foldingathome.org/
+18:51:29:WU01:FS00:0x22:       Date: Sep 19 2020
+18:51:29:WU01:FS00:0x22:       Time: 02:35:58
+18:51:29:WU01:FS00:0x22:   Revision: 571cf95de6de2c592c7c3ed48fcfb2e33e9ea7d3
+18:51:29:WU01:FS00:0x22:     Branch: core22-0.0.13
+18:51:29:WU01:FS00:0x22:   Compiler: Visual C++ 2015
+18:51:29:WU01:FS00:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+18:51:29:WU01:FS00:0x22:             -DOPENMM_GIT_HASH=\"\\\"189320d0\\\"\"
+18:51:29:WU01:FS00:0x22:   Platform: win32 10
+18:51:29:WU01:FS00:0x22:       Bits: 64
+18:51:29:WU01:FS00:0x22:       Mode: Release
+18:51:29:WU01:FS00:0x22:Maintainers: John Chodera <john.chodera@choderalab.org> and Peter Eastman
+18:51:29:WU01:FS00:0x22:             <peastman@stanford.edu>
+18:51:29:WU01:FS00:0x22:       Args: -dir 01 -suffix 01 -version 706 -lifeline 11288 -checkpoint 15
+18:51:29:WU01:FS00:0x22:             -opencl-platform 0 -opencl-device 0 -cuda-device 0 -gpu-vendor
+18:51:29:WU01:FS00:0x22:             nvidia -gpu 0 -gpu-usage 100
+18:51:29:WU01:FS00:0x22:************************************ libFAH ************************************
+18:51:29:WU01:FS00:0x22:       Date: Sep 7 2020
+18:51:29:WU01:FS00:0x22:       Time: 19:09:56
+18:51:29:WU01:FS00:0x22:   Revision: 44301ed97b996b63fe736bb8073f22209cb2b603
+18:51:29:WU01:FS00:0x22:     Branch: HEAD
+18:51:29:WU01:FS00:0x22:   Compiler: Visual C++ 2015
+18:51:29:WU01:FS00:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+18:51:29:WU01:FS00:0x22:   Platform: win32 10
+18:51:29:WU01:FS00:0x22:       Bits: 64
+18:51:29:WU01:FS00:0x22:       Mode: Release
+18:51:29:WU01:FS00:0x22:************************************ CBang *************************************
+18:51:29:WU01:FS00:0x22:       Date: Sep 7 2020
+18:51:29:WU01:FS00:0x22:       Time: 19:08:30
+18:51:29:WU01:FS00:0x22:   Revision: 33fcfc2b3ed2195a423606a264718e31e6b3903f
+18:51:29:WU01:FS00:0x22:     Branch: HEAD
+18:51:29:WU01:FS00:0x22:   Compiler: Visual C++ 2015
+18:51:29:WU01:FS00:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+18:51:29:WU01:FS00:0x22:   Platform: win32 10
+18:51:29:WU01:FS00:0x22:       Bits: 64
+18:51:29:WU01:FS00:0x22:       Mode: Release
+18:51:29:WU01:FS00:0x22:************************************ System ************************************
+18:51:29:WU01:FS00:0x22:        CPU: Intel(R) Core(TM) i7 CPU 920 @ 2.67GHz
+18:51:29:WU01:FS00:0x22:     CPU ID: GenuineIntel Family 6 Model 26 Stepping 5
+18:51:29:WU01:FS00:0x22:       CPUs: 8
+18:51:29:WU01:FS00:0x22:     Memory: 8.99GiB
+18:51:29:WU01:FS00:0x22:Free Memory: 4.93GiB
+18:51:29:WU01:FS00:0x22:    Threads: WINDOWS_THREADS
+18:51:29:WU01:FS00:0x22: OS Version: 6.2
+18:51:29:WU01:FS00:0x22:Has Battery: false
+18:51:29:WU01:FS00:0x22: On Battery: false
+18:51:29:WU01:FS00:0x22: UTC Offset: 2
+18:51:29:WU01:FS00:0x22:        PID: 2624
+18:51:29:WU01:FS00:0x22:        CWD: D:\\FAH7_Data\\work
+18:51:29:WU01:FS00:0x22:************************************ OpenMM ************************************
+18:51:29:WU01:FS00:0x22:   Revision: 189320d0
+18:51:29:WU01:FS00:0x22:********************************************************************************
+18:51:29:WU01:FS00:0x22:Project: 18114 (Run 20, Clone 0, Gen 45)
+18:51:29:WU01:FS00:0x22:Unit: 0x00000000000000000000000000000000
+18:51:29:WU01:FS00:0x22:Reading tar file core.xml
+18:51:29:WU01:FS00:0x22:Reading tar file integrator.xml.bz2
+18:51:29:WU01:FS00:0x22:Reading tar file state.xml.bz2
+18:51:29:WU01:FS00:0x22:Reading tar file system.xml.bz2
+18:51:29:WU01:FS00:0x22:Digital signatures verified
+18:51:29:WU01:FS00:0x22:Folding@home GPU Core22 Folding@home Core
+18:51:29:WU01:FS00:0x22:Version 0.0.13
+18:51:29:WU01:FS00:0x22:  Checkpoint write interval: 250000 steps (5%) [20 total]
+18:51:29:WU01:FS00:0x22:  JSON viewer frame write interval: 50000 steps (1%) [100 total]
+18:51:29:WU01:FS00:0x22:  XTC frame write interval: 50000 steps (1%) [100 total]
+18:51:29:WU01:FS00:0x22:  Global context and integrator variables write interval: disabled
+18:51:30:WU01:FS00:0x22:There are 4 platforms available.
+18:51:30:WU01:FS00:0x22:Platform 0: Reference
+18:51:30:WU01:FS00:0x22:Platform 1: CPU
+18:51:30:WU01:FS00:0x22:Platform 2: OpenCL
+18:51:30:WU01:FS00:0x22:  opencl-device 0 specified
+18:51:30:WU01:FS00:0x22:Platform 3: CUDA
+18:51:30:WU01:FS00:0x22:  cuda-device 0 specified
+18:51:33:WU00:FS00:Upload 13.35%
+18:51:34:WU01:FS00:0x22:Attempting to create CUDA context:
+18:51:34:WU01:FS00:0x22:  Configuring platform CUDA
+18:51:36:WU01:FS00:0x22:  Using CUDA and gpu 0
+18:51:36:WU01:FS00:0x22:Completed 0 out of 5000000 steps (0%)
+18:51:36:WU01:FS00:0x22:Checkpoint completed at step 0
+18:51:39:WU00:FS00:Upload 27.68%
+18:51:45:WU00:FS00:Upload 42.02%
+18:51:51:WU00:FS00:Upload 56.35%
+18:51:57:WU00:FS00:Upload 70.68%
+18:52:03:WU00:FS00:Upload 85.01%
+18:52:09:WU00:FS00:Upload 99.34%
+18:52:14:WU00:FS00:Upload complete
+18:52:14:WU00:FS00:Server responded WORK_ACK (400)
+18:52:14:WU00:FS00:Final credit estimate, 150795.00 points
+18:52:14:WU00:FS00:Cleaning up
+18:53:26:WU01:FS00:0x22:Completed 50000 out of 5000000 steps (1%)
+18:55:15:WU01:FS00:0x22:Completed 100000 out of 5000000 steps (2%)
+18:57:05:WU01:FS00:0x22:Completed 150000 out of 5000000 steps (3%)
+18:58:54:WU01:FS00:0x22:Completed 200000 out of 5000000 steps (4%)
+19:00:44:WU01:FS00:0x22:Completed 250000 out of 5000000 steps (5%)
+19:00:44:WU01:FS00:0x22:Checkpoint completed at step 250000
+19:02:34:WU01:FS00:0x22:Completed 300000 out of 5000000 steps (6%)
+19:04:24:WU01:FS00:0x22:Completed 350000 out of 5000000 steps (7%)
+19:06:14:WU01:FS00:0x22:Completed 400000 out of 5000000 steps (8%)
+19:08:03:WU01:FS00:0x22:Completed 450000 out of 5000000 steps (9%)
+19:09:53:WU01:FS00:0x22:Completed 500000 out of 5000000 steps (10%)
+19:09:53:WU01:FS00:0x22:Checkpoint completed at step 500000
+19:11:43:WU01:FS00:0x22:Completed 550000 out of 5000000 steps (11%)
+19:13:35:WU01:FS00:0x22:Completed 600000 out of 5000000 steps (12%)
+19:15:26:WU01:FS00:0x22:Completed 650000 out of 5000000 steps (13%)
+19:17:18:WU01:FS00:0x22:Completed 700000 out of 5000000 steps (14%)
+19:19:09:WU01:FS00:0x22:Completed 750000 out of 5000000 steps (15%)
+19:19:09:WU01:FS00:0x22:Checkpoint completed at step 750000
+19:21:00:WU01:FS00:0x22:Completed 800000 out of 5000000 steps (16%)
+19:22:49:WU01:FS00:0x22:Completed 850000 out of 5000000 steps (17%)
+19:24:39:WU01:FS00:0x22:Completed 900000 out of 5000000 steps (18%)
+19:26:34:WU01:FS00:0x22:Completed 950000 out of 5000000 steps (19%)
+19:28:31:WU01:FS00:0x22:Completed 1000000 out of 5000000 steps (20%)
+19:28:31:WU01:FS00:0x22:Checkpoint completed at step 1000000
+19:30:24:WU01:FS00:0x22:Completed 1050000 out of 5000000 steps (21%)
+19:32:14:WU01:FS00:0x22:Completed 1100000 out of 5000000 steps (22%)
+19:34:05:WU01:FS00:0x22:Completed 1150000 out of 5000000 steps (23%)
+19:35:58:WU01:FS00:0x22:Completed 1200000 out of 5000000 steps (24%)
+19:37:51:WU01:FS00:0x22:Completed 1250000 out of 5000000 steps (25%)
+19:37:51:WU01:FS00:0x22:Checkpoint completed at step 1250000
+19:39:41:WU01:FS00:0x22:Completed 1300000 out of 5000000 steps (26%)
+19:41:32:WU01:FS00:0x22:Completed 1350000 out of 5000000 steps (27%)
+******************************* Date: 2021-10-15 *******************************
+19:43:24:WU01:FS00:0x22:Completed 1400000 out of 5000000 steps (28%)
+19:45:16:WU01:FS00:0x22:Completed 1450000 out of 5000000 steps (29%)
+19:47:08:WU01:FS00:0x22:Completed 1500000 out of 5000000 steps (30%)
+19:47:09:WU01:FS00:0x22:Checkpoint completed at step 1500000
+19:49:02:WU01:FS00:0x22:Completed 1550000 out of 5000000 steps (31%)
+19:50:52:WU01:FS00:0x22:Completed 1600000 out of 5000000 steps (32%)
+19:52:43:WU01:FS00:0x22:Completed 1650000 out of 5000000 steps (33%)
+19:54:36:WU01:FS00:0x22:Completed 1700000 out of 5000000 steps (34%)
+19:56:30:WU01:FS00:0x22:Completed 1750000 out of 5000000 steps (35%)
+19:56:31:WU01:FS00:0x22:Checkpoint completed at step 1750000
+19:58:25:WU01:FS00:0x22:Completed 1800000 out of 5000000 steps (36%)
+20:00:19:WU01:FS00:0x22:Completed 1850000 out of 5000000 steps (37%)
+20:02:12:WU01:FS00:0x22:Completed 1900000 out of 5000000 steps (38%)
+20:04:05:WU01:FS00:0x22:Completed 1950000 out of 5000000 steps (39%)
+20:06:00:WU01:FS00:0x22:Completed 2000000 out of 5000000 steps (40%)
+20:06:01:WU01:FS00:0x22:Checkpoint completed at step 2000000
+20:07:55:WU01:FS00:0x22:Completed 2050000 out of 5000000 steps (41%)
+20:09:49:WU01:FS00:0x22:Completed 2100000 out of 5000000 steps (42%)
+20:11:44:WU01:FS00:0x22:Completed 2150000 out of 5000000 steps (43%)
+20:13:38:WU01:FS00:0x22:Completed 2200000 out of 5000000 steps (44%)
+20:15:33:WU01:FS00:0x22:Completed 2250000 out of 5000000 steps (45%)
+20:15:33:WU01:FS00:0x22:Checkpoint completed at step 2250000
+20:17:27:WU01:FS00:0x22:Completed 2300000 out of 5000000 steps (46%)
+20:19:22:WU01:FS00:0x22:Completed 2350000 out of 5000000 steps (47%)
+20:21:16:WU01:FS00:0x22:Completed 2400000 out of 5000000 steps (48%)
+20:23:11:WU01:FS00:0x22:Completed 2450000 out of 5000000 steps (49%)
+20:25:05:WU01:FS00:0x22:Completed 2500000 out of 5000000 steps (50%)
+20:25:05:WU01:FS00:0x22:Checkpoint completed at step 2500000
+20:27:00:WU01:FS00:0x22:Completed 2550000 out of 5000000 steps (51%)
+20:28:53:WU01:FS00:0x22:Completed 2600000 out of 5000000 steps (52%)
+20:30:45:WU01:FS00:0x22:Completed 2650000 out of 5000000 steps (53%)
+20:32:35:WU01:FS00:0x22:Completed 2700000 out of 5000000 steps (54%)
+20:34:28:WU01:FS00:0x22:Completed 2750000 out of 5000000 steps (55%)
+20:34:28:WU01:FS00:0x22:Checkpoint completed at step 2750000
+20:36:23:WU01:FS00:0x22:Completed 2800000 out of 5000000 steps (56%)
+20:38:17:WU01:FS00:0x22:Completed 2850000 out of 5000000 steps (57%)
+20:40:10:WU01:FS00:0x22:Completed 2900000 out of 5000000 steps (58%)
+20:42:03:WU01:FS00:0x22:Completed 2950000 out of 5000000 steps (59%)
+20:43:59:WU01:FS00:0x22:Completed 3000000 out of 5000000 steps (60%)
+20:43:59:WU01:FS00:0x22:Checkpoint completed at step 3000000
+20:45:58:WU01:FS00:0x22:Completed 3050000 out of 5000000 steps (61%)
+20:47:56:WU01:FS00:0x22:Completed 3100000 out of 5000000 steps (62%)
+20:49:55:WU01:FS00:0x22:Completed 3150000 out of 5000000 steps (63%)
+20:51:53:WU01:FS00:0x22:Completed 3200000 out of 5000000 steps (64%)
+20:53:51:WU01:FS00:0x22:Completed 3250000 out of 5000000 steps (65%)
+20:53:52:WU01:FS00:0x22:Checkpoint completed at step 3250000
+20:55:50:WU01:FS00:0x22:Completed 3300000 out of 5000000 steps (66%)
+20:57:49:WU01:FS00:0x22:Completed 3350000 out of 5000000 steps (67%)
+20:59:47:WU01:FS00:0x22:Completed 3400000 out of 5000000 steps (68%)
+21:01:45:WU01:FS00:0x22:Completed 3450000 out of 5000000 steps (69%)
+21:03:42:WU01:FS00:0x22:Completed 3500000 out of 5000000 steps (70%)
+21:03:43:WU01:FS00:0x22:Checkpoint completed at step 3500000
+21:05:41:WU01:FS00:0x22:Completed 3550000 out of 5000000 steps (71%)
+21:07:40:WU01:FS00:0x22:Completed 3600000 out of 5000000 steps (72%)
+21:09:38:WU01:FS00:0x22:Completed 3650000 out of 5000000 steps (73%)
+21:11:29:WU01:FS00:0x22:Completed 3700000 out of 5000000 steps (74%)
+21:13:24:WU01:FS00:0x22:Completed 3750000 out of 5000000 steps (75%)
+21:13:24:WU01:FS00:0x22:Checkpoint completed at step 3750000
+21:15:19:WU01:FS00:0x22:Completed 3800000 out of 5000000 steps (76%)
+21:15:40:WU01:FS00:0x22:An exception occurred at step 3808924: Particle coordinate is nan
+21:15:40:WU01:FS00:0x22:ERROR:98: Attempting to restart from last good checkpoint by restarting core.
+21:15:40:WU01:FS00:0x22:Folding@home Core Shutdown: CORE_RESTART
+21:15:40:WARNING:WU01:FS00:FahCore returned: CORE_RESTART (98 = 0x62)
+21:15:40:WU01:FS00:Starting
+21:15:40:WU01:FS00:Running FahCore: D:\\FAH7/FAHCoreWrapper.exe D:\\FAH7_Data\\cores/cores.foldingathome.org/win/64bit/22-0.0.13/Core_22.fah/FahCore_22.exe -dir 01 -suffix 01 -version 706 -lifeline 1468 -checkpoint 15 -opencl-platform 0 -opencl-device 0 -cuda-device 0 -gpu-vendor nvidia -gpu 0 -gpu-usage 100 --disable-cuda
+21:15:41:WU01:FS00:Started FahCore on PID 8208
+21:15:42:WU01:FS00:Core PID:732
+21:15:42:WU01:FS00:FahCore 0x22 started
+21:15:43:WU01:FS00:0x22:*********************** Log Started 2021-10-15T21:15:42Z ***********************
+21:15:43:WU01:FS00:0x22:*************************** Core22 Folding@home Core ***************************
+21:15:43:WU01:FS00:0x22:       Core: Core22
+21:15:43:WU01:FS00:0x22:       Type: 0x22
+21:15:43:WU01:FS00:0x22:    Version: 0.0.13
+21:15:43:WU01:FS00:0x22:     Author: Joseph Coffland <joseph@cauldrondevelopment.com>
+21:15:43:WU01:FS00:0x22:  Copyright: 2020 foldingathome.org
+21:15:43:WU01:FS00:0x22:   Homepage: https://foldingathome.org/
+21:15:43:WU01:FS00:0x22:       Date: Sep 19 2020
+21:15:43:WU01:FS00:0x22:       Time: 02:35:58
+21:15:43:WU01:FS00:0x22:   Revision: 571cf95de6de2c592c7c3ed48fcfb2e33e9ea7d3
+21:15:43:WU01:FS00:0x22:     Branch: core22-0.0.13
+21:15:43:WU01:FS00:0x22:   Compiler: Visual C++ 2015
+21:15:43:WU01:FS00:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+21:15:43:WU01:FS00:0x22:             -DOPENMM_GIT_HASH=\"\\\"189320d0\\\"\"
+21:15:43:WU01:FS00:0x22:   Platform: win32 10
+21:15:43:WU01:FS00:0x22:       Bits: 64
+21:15:43:WU01:FS00:0x22:       Mode: Release
+21:15:43:WU01:FS00:0x22:Maintainers: John Chodera <john.chodera@choderalab.org> and Peter Eastman
+21:15:43:WU01:FS00:0x22:             <peastman@stanford.edu>
+21:15:43:WU01:FS00:0x22:       Args: -dir 01 -suffix 01 -version 706 -lifeline 8208 -checkpoint 15
+21:15:43:WU01:FS00:0x22:             -opencl-platform 0 -opencl-device 0 -cuda-device 0 -gpu-vendor
+21:15:43:WU01:FS00:0x22:             nvidia -gpu 0 -gpu-usage 100 --disable-cuda
+21:15:43:WU01:FS00:0x22:************************************ libFAH ************************************
+21:15:43:WU01:FS00:0x22:       Date: Sep 7 2020
+21:15:43:WU01:FS00:0x22:       Time: 19:09:56
+21:15:43:WU01:FS00:0x22:   Revision: 44301ed97b996b63fe736bb8073f22209cb2b603
+21:15:43:WU01:FS00:0x22:     Branch: HEAD
+21:15:43:WU01:FS00:0x22:   Compiler: Visual C++ 2015
+21:15:43:WU01:FS00:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+21:15:43:WU01:FS00:0x22:   Platform: win32 10
+21:15:43:WU01:FS00:0x22:       Bits: 64
+21:15:43:WU01:FS00:0x22:       Mode: Release
+21:15:43:WU01:FS00:0x22:************************************ CBang *************************************
+21:15:43:WU01:FS00:0x22:       Date: Sep 7 2020
+21:15:43:WU01:FS00:0x22:       Time: 19:08:30
+21:15:43:WU01:FS00:0x22:   Revision: 33fcfc2b3ed2195a423606a264718e31e6b3903f
+21:15:43:WU01:FS00:0x22:     Branch: HEAD
+21:15:43:WU01:FS00:0x22:   Compiler: Visual C++ 2015
+21:15:43:WU01:FS00:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+21:15:43:WU01:FS00:0x22:   Platform: win32 10
+21:15:43:WU01:FS00:0x22:       Bits: 64
+21:15:43:WU01:FS00:0x22:       Mode: Release
+21:15:43:WU01:FS00:0x22:************************************ System ************************************
+21:15:43:WU01:FS00:0x22:        CPU: Intel(R) Core(TM) i7 CPU 920 @ 2.67GHz
+21:15:43:WU01:FS00:0x22:     CPU ID: GenuineIntel Family 6 Model 26 Stepping 5
+21:15:43:WU01:FS00:0x22:       CPUs: 8
+21:15:43:WU01:FS00:0x22:     Memory: 8.99GiB
+21:15:43:WU01:FS00:0x22:Free Memory: 5.15GiB
+21:15:43:WU01:FS00:0x22:    Threads: WINDOWS_THREADS
+21:15:43:WU01:FS00:0x22: OS Version: 6.2
+21:15:43:WU01:FS00:0x22:Has Battery: false
+21:15:43:WU01:FS00:0x22: On Battery: false
+21:15:43:WU01:FS00:0x22: UTC Offset: 2
+21:15:43:WU01:FS00:0x22:        PID: 732
+21:15:43:WU01:FS00:0x22:        CWD: D:\\FAH7_Data\\work
+21:15:43:WU01:FS00:0x22:************************************ OpenMM ************************************
+21:15:43:WU01:FS00:0x22:   Revision: 189320d0
+21:15:43:WU01:FS00:0x22:********************************************************************************
+21:15:43:WU01:FS00:0x22:Project: 18114 (Run 20, Clone 0, Gen 45)
+21:15:43:WU01:FS00:0x22:Unit: 0x00000000000000000000000000000000
+21:15:43:WU01:FS00:0x22:Digital signatures verified
+21:15:43:WU01:FS00:0x22:Folding@home GPU Core22 Folding@home Core
+21:15:43:WU01:FS00:0x22:Version 0.0.13
+21:15:43:WU01:FS00:0x22:  Checkpoint write interval: 250000 steps (5%) [20 total]
+21:15:43:WU01:FS00:0x22:  JSON viewer frame write interval: 50000 steps (1%) [100 total]
+21:15:43:WU01:FS00:0x22:  XTC frame write interval: 50000 steps (1%) [100 total]
+21:15:43:WU01:FS00:0x22:  Global context and integrator variables write interval: disabled
+21:15:44:WU01:FS00:0x22:There are 4 platforms available.
+21:15:44:WU01:FS00:0x22:Platform 0: Reference
+21:15:44:WU01:FS00:0x22:Platform 1: CPU
+21:15:44:WU01:FS00:0x22:Platform 2: OpenCL
+21:15:44:WU01:FS00:0x22:  opencl-device 0 specified
+21:15:44:WU01:FS00:0x22:Platform 3: CUDA
+21:15:44:WU01:FS00:0x22:  cuda-device 0 specified
+21:15:44:WU01:FS00:0x22:Disabling CUDA platform because 'disable-cuda' argument was specified.
+21:15:47:WU01:FS00:0x22:Attempting to create OpenCL context:
+21:15:47:WU01:FS00:0x22:  Configuring platform OpenCL
+21:15:54:WU01:FS00:0x22:  Using OpenCL on platformId 0 and gpu 0
+21:15:54:WU01:FS00:0x22:Completed 0 out of 5000000 steps (0%)
+21:18:09:WU01:FS00:0x22:Completed 50000 out of 5000000 steps (1%)
+21:20:23:WU01:FS00:0x22:Completed 100000 out of 5000000 steps (2%)
+21:22:38:WU01:FS00:0x22:Completed 150000 out of 5000000 steps (3%)
+21:24:53:WU01:FS00:0x22:Completed 200000 out of 5000000 steps (4%)
+21:27:05:WU01:FS00:0x22:Completed 250000 out of 5000000 steps (5%)
+21:27:06:WU01:FS00:0x22:Checkpoint completed at step 250000
+21:29:18:WU01:FS00:0x22:Completed 300000 out of 5000000 steps (6%)
+21:31:31:WU01:FS00:0x22:Completed 350000 out of 5000000 steps (7%)
+21:33:42:WU01:FS00:0x22:Completed 400000 out of 5000000 steps (8%)
+21:35:57:WU01:FS00:0x22:Completed 450000 out of 5000000 steps (9%)
+21:38:13:WU01:FS00:0x22:Completed 500000 out of 5000000 steps (10%)
+21:38:13:WU01:FS00:0x22:Checkpoint completed at step 500000
+21:40:30:WU01:FS00:0x22:Completed 550000 out of 5000000 steps (11%)
+21:42:46:WU01:FS00:0x22:Completed 600000 out of 5000000 steps (12%)
+21:44:58:WU01:FS00:0x22:Completed 650000 out of 5000000 steps (13%)
+21:47:07:WU01:FS00:0x22:Completed 700000 out of 5000000 steps (14%)
+21:49:19:WU01:FS00:0x22:Completed 750000 out of 5000000 steps (15%)
+21:49:19:WU01:FS00:0x22:Checkpoint completed at step 750000
+21:51:33:WU01:FS00:0x22:Completed 800000 out of 5000000 steps (16%)
+21:53:46:WU01:FS00:0x22:Completed 850000 out of 5000000 steps (17%)
+21:55:59:WU01:FS00:0x22:Completed 900000 out of 5000000 steps (18%)
+21:58:12:WU01:FS00:0x22:Completed 950000 out of 5000000 steps (19%)
+22:00:25:WU01:FS00:0x22:Completed 1000000 out of 5000000 steps (20%)
+22:00:25:WU01:FS00:0x22:Checkpoint completed at step 1000000
+22:02:39:WU01:FS00:0x22:Completed 1050000 out of 5000000 steps (21%)
+22:04:52:WU01:FS00:0x22:Completed 1100000 out of 5000000 steps (22%)
+22:07:05:WU01:FS00:0x22:Completed 1150000 out of 5000000 steps (23%)
+22:09:17:WU01:FS00:0x22:Completed 1200000 out of 5000000 steps (24%)
+22:11:31:WU01:FS00:0x22:Completed 1250000 out of 5000000 steps (25%)
+22:11:32:WU01:FS00:0x22:Checkpoint completed at step 1250000
+22:13:45:WU01:FS00:0x22:Completed 1300000 out of 5000000 steps (26%)
+22:15:57:WU01:FS00:0x22:Completed 1350000 out of 5000000 steps (27%)
+22:18:10:WU01:FS00:0x22:Completed 1400000 out of 5000000 steps (28%)
+22:20:23:WU01:FS00:0x22:Completed 1450000 out of 5000000 steps (29%)
+22:22:36:WU01:FS00:0x22:Completed 1500000 out of 5000000 steps (30%)
+22:22:37:WU01:FS00:0x22:Checkpoint completed at step 1500000
+22:24:50:WU01:FS00:0x22:Completed 1550000 out of 5000000 steps (31%)
+22:27:03:WU01:FS00:0x22:Completed 1600000 out of 5000000 steps (32%)
+22:29:16:WU01:FS00:0x22:Completed 1650000 out of 5000000 steps (33%)
+22:31:29:WU01:FS00:0x22:Completed 1700000 out of 5000000 steps (34%)
+22:33:42:WU01:FS00:0x22:Completed 1750000 out of 5000000 steps (35%)
+22:33:42:WU01:FS00:0x22:Checkpoint completed at step 1750000
+22:35:55:WU01:FS00:0x22:Completed 1800000 out of 5000000 steps (36%)
+22:38:08:WU01:FS00:0x22:Completed 1850000 out of 5000000 steps (37%)
+22:40:21:WU01:FS00:0x22:Completed 1900000 out of 5000000 steps (38%)
+22:42:34:WU01:FS00:0x22:Completed 1950000 out of 5000000 steps (39%)
+22:44:44:WU01:FS00:0x22:Completed 2000000 out of 5000000 steps (40%)
+22:44:44:WU01:FS00:0x22:Checkpoint completed at step 2000000
+22:46:55:WU01:FS00:0x22:Completed 2050000 out of 5000000 steps (41%)
+22:49:06:WU01:FS00:0x22:Completed 2100000 out of 5000000 steps (42%)
+22:51:16:WU01:FS00:0x22:Completed 2150000 out of 5000000 steps (43%)
+22:53:27:WU01:FS00:0x22:Completed 2200000 out of 5000000 steps (44%)
+22:55:37:WU01:FS00:0x22:Completed 2250000 out of 5000000 steps (45%)
+22:55:37:WU01:FS00:0x22:Checkpoint completed at step 2250000
+22:57:48:WU01:FS00:0x22:Completed 2300000 out of 5000000 steps (46%)
+22:59:58:WU01:FS00:0x22:Completed 2350000 out of 5000000 steps (47%)
+23:02:09:WU01:FS00:0x22:Completed 2400000 out of 5000000 steps (48%)
+23:04:18:WU01:FS00:0x22:Completed 2450000 out of 5000000 steps (49%)
+23:06:31:WU01:FS00:0x22:Completed 2500000 out of 5000000 steps (50%)
+23:06:31:WU01:FS00:0x22:Checkpoint completed at step 2500000
+23:08:39:WU01:FS00:0x22:Completed 2550000 out of 5000000 steps (51%)
+23:10:46:WU01:FS00:0x22:Completed 2600000 out of 5000000 steps (52%)
+23:12:56:WU01:FS00:0x22:Completed 2650000 out of 5000000 steps (53%)
+23:15:04:WU01:FS00:0x22:Completed 2700000 out of 5000000 steps (54%)
+23:17:11:WU01:FS00:0x22:Completed 2750000 out of 5000000 steps (55%)
+23:17:12:WU01:FS00:0x22:Checkpoint completed at step 2750000
+23:19:19:WU01:FS00:0x22:Completed 2800000 out of 5000000 steps (56%)
+23:21:27:WU01:FS00:0x22:Completed 2850000 out of 5000000 steps (57%)
+23:23:35:WU01:FS00:0x22:Completed 2900000 out of 5000000 steps (58%)
+23:25:43:WU01:FS00:0x22:Completed 2950000 out of 5000000 steps (59%)
+23:27:51:WU01:FS00:0x22:Completed 3000000 out of 5000000 steps (60%)
+23:27:51:WU01:FS00:0x22:Checkpoint completed at step 3000000
+23:29:59:WU01:FS00:0x22:Completed 3050000 out of 5000000 steps (61%)
+23:32:07:WU01:FS00:0x22:Completed 3100000 out of 5000000 steps (62%)
+23:34:15:WU01:FS00:0x22:Completed 3150000 out of 5000000 steps (63%)
+23:36:22:WU01:FS00:0x22:Completed 3200000 out of 5000000 steps (64%)
+23:38:30:WU01:FS00:0x22:Completed 3250000 out of 5000000 steps (65%)
+23:38:30:WU01:FS00:0x22:Checkpoint completed at step 3250000
+23:40:39:WU01:FS00:0x22:Completed 3300000 out of 5000000 steps (66%)
+23:42:46:WU01:FS00:0x22:Completed 3350000 out of 5000000 steps (67%)
+23:44:54:WU01:FS00:0x22:Completed 3400000 out of 5000000 steps (68%)
+23:47:02:WU01:FS00:0x22:Completed 3450000 out of 5000000 steps (69%)
+23:49:09:WU01:FS00:0x22:Completed 3500000 out of 5000000 steps (70%)
+23:49:10:WU01:FS00:0x22:Checkpoint completed at step 3500000
+23:51:18:WU01:FS00:0x22:Completed 3550000 out of 5000000 steps (71%)
+23:53:26:WU01:FS00:0x22:Completed 3600000 out of 5000000 steps (72%)
+23:55:34:WU01:FS00:0x22:Completed 3650000 out of 5000000 steps (73%)
+23:57:41:WU01:FS00:0x22:Completed 3700000 out of 5000000 steps (74%)
+23:59:49:WU01:FS00:0x22:Completed 3750000 out of 5000000 steps (75%)
+23:59:49:WU01:FS00:0x22:Checkpoint completed at step 3750000
+00:01:57:WU01:FS00:0x22:Completed 3800000 out of 5000000 steps (76%)
+00:04:04:WU01:FS00:0x22:Completed 3850000 out of 5000000 steps (77%)
+00:06:12:WU01:FS00:0x22:Completed 3900000 out of 5000000 steps (78%)
+00:08:19:WU01:FS00:0x22:Completed 3950000 out of 5000000 steps (79%)
+00:10:27:WU01:FS00:0x22:Completed 4000000 out of 5000000 steps (80%)
+00:10:27:WU01:FS00:0x22:Checkpoint completed at step 4000000
+00:12:35:WU01:FS00:0x22:Completed 4050000 out of 5000000 steps (81%)
+00:14:43:WU01:FS00:0x22:Completed 4100000 out of 5000000 steps (82%)
+00:16:51:WU01:FS00:0x22:Completed 4150000 out of 5000000 steps (83%)
+00:18:58:WU01:FS00:0x22:Completed 4200000 out of 5000000 steps (84%)
+00:21:05:WU01:FS00:0x22:Completed 4250000 out of 5000000 steps (85%)
+00:21:06:WU01:FS00:0x22:Checkpoint completed at step 4250000
+00:23:14:WU01:FS00:0x22:Completed 4300000 out of 5000000 steps (86%)
+00:25:22:WU01:FS00:0x22:Completed 4350000 out of 5000000 steps (87%)
+00:27:30:WU01:FS00:0x22:Completed 4400000 out of 5000000 steps (88%)
+00:29:37:WU01:FS00:0x22:Completed 4450000 out of 5000000 steps (89%)
+00:31:45:WU01:FS00:0x22:Completed 4500000 out of 5000000 steps (90%)
+00:31:46:WU01:FS00:0x22:Checkpoint completed at step 4500000
+00:33:53:WU01:FS00:0x22:Completed 4550000 out of 5000000 steps (91%)
+00:36:01:WU01:FS00:0x22:Completed 4600000 out of 5000000 steps (92%)
+00:38:08:WU01:FS00:0x22:Completed 4650000 out of 5000000 steps (93%)
+00:40:17:WU01:FS00:0x22:Completed 4700000 out of 5000000 steps (94%)
+00:42:24:WU01:FS00:0x22:Completed 4750000 out of 5000000 steps (95%)
+00:42:24:WU01:FS00:0x22:Checkpoint completed at step 4750000
+00:44:33:WU01:FS00:0x22:Completed 4800000 out of 5000000 steps (96%)
+00:46:40:WU01:FS00:0x22:Completed 4850000 out of 5000000 steps (97%)
+00:48:48:WU01:FS00:0x22:Completed 4900000 out of 5000000 steps (98%)
+00:50:56:WU01:FS00:0x22:Completed 4950000 out of 5000000 steps (99%)
+00:50:57:WU00:FS00:Connecting to assign1.foldingathome.org:80
+00:50:58:WU00:FS00:Assigned to work server 140.163.4.200
+00:50:58:WU00:FS00:Requesting new work unit for slot 00: gpu:2:0 GP104 [GeForce GTX 1070] 6463 from 140.163.4.200
+00:50:58:WU00:FS00:Connecting to 140.163.4.200:8080
+00:50:58:WU00:FS00:Downloading 13.10MiB
+00:51:04:WU00:FS00:Download 84.95%
+00:51:04:WU00:FS00:Download complete
+00:51:04:WU00:FS00:Received Unit: id:00 state:DOWNLOAD error:NO_ERROR project:16484 run:1 clone:1 gen:1 core:0x22 unit:0x00000001000000010000406400000001
+00:53:04:WU01:FS00:0x22:Completed 5000000 out of 5000000 steps (100%)
+00:53:04:WU01:FS00:0x22:Average performance: 27 ns/day
+00:53:05:WU01:FS00:0x22:Checkpoint completed at step 5000000
+00:53:09:WU01:FS00:0x22:Saving result file ..\\logfile_01.txt
+00:53:09:WU01:FS00:0x22:Saving result file checkpointIntegrator.xml.bz2
+00:53:09:WU01:FS00:0x22:Saving result file checkpointState.xml.bz2
+00:53:09:WU01:FS00:0x22:Saving result file positions.xtc
+00:53:09:WU01:FS00:0x22:Saving result file science.log
+00:53:09:WU01:FS00:0x22:Folding@home Core Shutdown: FINISHED_UNIT
+00:53:10:WU01:FS00:FahCore returned: FINISHED_UNIT (100 = 0x64)
