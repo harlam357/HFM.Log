@@ -135,6 +135,7 @@ namespace HFM.Log
             ProjectRun = other.ProjectRun;
             ProjectClone = other.ProjectClone;
             ProjectGen = other.ProjectGen;
+            Platform = other.Platform;
             WorkUnitResult = other.WorkUnitResult;
             Frames = CopyFrames(other.Frames);
         }
@@ -186,6 +187,11 @@ namespace HFM.Log
         /// Gets or sets the project ID (Gen).
         /// </summary>
         public int ProjectGen { get; set; }
+
+        /// <summary>
+        /// Gets or sets the work unit platform (CPU, CUDA, OpenCL).
+        /// </summary>
+        public string Platform { get; set; }
 
         /// <summary>
         /// Gets or sets the work unit result.

@@ -1,0 +1,187 @@
+*********************** Log Started 2021-10-15T19:29:29Z ***********************
+19:29:29:******************************* libFAH ********************************
+19:29:29:           Date: Sep 21 2020
+19:29:29:           Time: 19:19:29
+19:29:29:       Revision: 968294536b7a2ee12aafe1cd816ee9a92b397306
+19:29:29:         Branch: master
+19:29:29:       Compiler: Visual C++ 2015
+19:29:29:        Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+19:29:29:       Platform: win32 10
+19:29:29:           Bits: 32
+19:29:29:           Mode: Release
+19:29:29:****************************** FAHClient ******************************
+19:29:29:        Version: 7.6.18
+19:29:29:         Author: Joseph Coffland <joseph@cauldrondevelopment.com>
+19:29:29:      Copyright: 2020 foldingathome.org
+19:29:29:       Homepage: https://foldingathome.org/
+19:29:29:           Date: Sep 21 2020
+19:29:29:           Time: 19:24:03
+19:29:29:       Revision: ff74dc0dcbe2b2480add311101627cc00f40b3be
+19:29:29:         Branch: master
+19:29:29:       Compiler: Visual C++ 2015
+19:29:29:        Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+19:29:29:       Platform: win32 10
+19:29:29:           Bits: 32
+19:29:29:           Mode: Release
+19:29:29:         Config: X:\_fahdata\config.xml
+19:29:29:******************************** CBang ********************************
+19:29:29:           Date: Sep 22 2020
+19:29:29:           Time: 01:18:05
+19:29:29:       Revision: a7a5a3b78804618a778c3d3a3900cb7ad02d84c4
+19:29:29:         Branch: master
+19:29:29:       Compiler: Visual C++ 2015
+19:29:29:        Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+19:29:29:       Platform: win32 10
+19:29:29:           Bits: 32
+19:29:29:           Mode: Release
+19:29:29:******************************* System ********************************
+19:29:29:            CPU: AMD Ryzen 9 5950X 16-Core Processor
+19:29:29:         CPU ID: AuthenticAMD Family 25 Model 33 Stepping 0
+19:29:29:           CPUs: 32
+19:29:29:         Memory: 31.93GiB
+19:29:29:    Free Memory: 28.64GiB
+19:29:29:        Threads: WINDOWS_THREADS
+19:29:29:     OS Version: 6.2
+19:29:29:    Has Battery: false
+19:29:29:     On Battery: false
+19:29:29:     UTC Offset: 1
+19:29:29:            PID: 13308
+19:29:29:            CWD: X:\_fahdata
+19:29:29:  Win32 Service: false
+19:29:29:             OS: Windows 10 Home
+19:29:29:        OS Arch: AMD64
+19:29:29:           GPUs: 1
+19:29:29:          GPU 0: Bus:47 Slot:0 Func:0 AMD:6 Navi 21 [Radeon RX 6800/6800 XT /
+19:29:29:                 6900 XT]
+19:29:29:           CUDA: Not detected: Failed to open dynamic library 'nvcuda.dll': The
+19:29:29:                 specified module could not be found.
+19:29:29:
+19:29:29:OpenCL Device 0: Platform:0 Device:0 Bus:47 Slot:0 Compute:1.2 Driver:3224.5
+19:29:29:***********************************************************************
+19:29:29:<config>
+19:29:29:  <!-- Folding Core -->
+19:29:29:  <checkpoint v='3'/>
+19:29:29:  <core-priority v='low'/>
+19:29:29:
+19:29:29:  <!-- HTTP Server -->
+19:29:29:  <allow v='127.0.0.1;192.168.1.3'/>
+19:29:29:
+19:29:29:  <!-- Network -->
+19:29:29:  <proxy v=':8080'/>
+19:29:29:
+19:29:29:  <!-- Remote Command Server -->
+19:29:29:  <password v='*****'/>
+19:29:29:
+19:29:29:  <!-- Slot Control -->
+19:29:29:  <pause-on-battery v='false'/>
+19:29:29:  <power v='FULL'/>
+19:29:29:
+19:29:29:  <!-- User Information -->
+19:29:29:  <passkey v='*****'/>
+19:29:29:  <team v='36816'/>
+19:29:29:  <user v='muziqaz'/>
+19:29:29:
+19:29:29:  <!-- Work Unit Control -->
+19:29:29:  <next-unit-percentage v='100'/>
+19:29:29:
+19:29:29:  <!-- Folding Slots -->
+19:29:29:  <slot id='0' type='GPU'>
+19:29:29:    <paused v='False'/>
+19:29:29:    <pci-bus v='47'/>
+19:29:29:    <pci-slot v='0'/>
+19:29:29:    <project-key v='164841337'/>
+19:29:29:  </slot>
+19:29:29:</config>
+19:29:29:Trying to access database...
+19:29:29:Successfully acquired database lock
+19:29:29:FS00:Initialized folding slot 00: gpu:47:0 Navi 21 [Radeon RX 6800/6800 XT / 6900 XT] - READY
+19:29:29:WU00:FS00:Starting
+19:29:29:WU00:FS00:Running FahCore: "C:\Program Files (x86)\FAHClient/FAHCoreWrapper.exe" X:\_fahdata\cores/cores.foldingathome.org/win/64bit/22-0.0.13/Core_22.fah/FahCore_22.exe -dir 00 -suffix 01 -version 706 -lifeline 13308 -checkpoint 3 -opencl-platform 0 -opencl-device 0 -gpu-vendor amd -gpu 0 -gpu-usage 100
+19:29:29:WU00:FS00:Started FahCore on PID 13364
+19:29:29:WU00:FS00:Core PID:13388
+19:29:29:WU00:FS00:FahCore 0x22 started
+19:29:31:WU00:FS00:0x22:*********************** Log Started 2021-10-15T19:29:30Z ***********************
+19:29:31:WU00:FS00:0x22:*************************** Core22 Folding@home Core ***************************
+19:29:31:WU00:FS00:0x22:       Core: Core22
+19:29:31:WU00:FS00:0x22:       Type: 0x22
+19:29:31:WU00:FS00:0x22:    Version: 0.0.14
+19:29:31:WU00:FS00:0x22:     Author: Joseph Coffland <joseph@cauldrondevelopment.com>
+19:29:31:WU00:FS00:0x22:  Copyright: 2020 foldingathome.org
+19:29:31:WU00:FS00:0x22:   Homepage: https://foldingathome.org/
+19:29:31:WU00:FS00:0x22:       Date: Jun 4 2021
+19:29:31:WU00:FS00:0x22:       Time: 02:46:41
+19:29:31:WU00:FS00:0x22:   Revision: 158a7ee746cce054c8d7691f9cfad2a4b52ed3ce
+19:29:31:WU00:FS00:0x22:     Branch: HEAD
+19:29:31:WU00:FS00:0x22:   Compiler: Visual C++
+19:29:31:WU00:FS00:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+19:29:31:WU00:FS00:0x22:             -DOPENMM_VERSION="\"7.5.1\""
+19:29:31:WU00:FS00:0x22:   Platform: win32 10
+19:29:31:WU00:FS00:0x22:       Bits: 64
+19:29:31:WU00:FS00:0x22:       Mode: Release
+19:29:31:WU00:FS00:0x22:Maintainers: John Chodera <john.chodera@choderalab.org> and Peter Eastman
+19:29:31:WU00:FS00:0x22:             <peastman@stanford.edu>
+19:29:31:WU00:FS00:0x22:       Args: -dir 00 -suffix 01 -version 706 -lifeline 13364 -checkpoint 3
+19:29:31:WU00:FS00:0x22:             -opencl-platform 0 -opencl-device 0 -gpu-vendor amd -gpu 0
+19:29:31:WU00:FS00:0x22:             -gpu-usage 100
+19:29:31:WU00:FS00:0x22:************************************ libFAH ************************************
+19:29:31:WU00:FS00:0x22:       Date: Jun 4 2021
+19:29:31:WU00:FS00:0x22:       Time: 02:46:04
+19:29:31:WU00:FS00:0x22:   Revision: 44301ed97b996b63fe736bb8073f22209cb2b603
+19:29:31:WU00:FS00:0x22:     Branch: HEAD
+19:29:31:WU00:FS00:0x22:   Compiler: Visual C++
+19:29:31:WU00:FS00:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+19:29:31:WU00:FS00:0x22:   Platform: win32 10
+19:29:31:WU00:FS00:0x22:       Bits: 64
+19:29:31:WU00:FS00:0x22:       Mode: Release
+19:29:31:WU00:FS00:0x22:************************************ CBang *************************************
+19:29:31:WU00:FS00:0x22:       Date: Jun 4 2021
+19:29:31:WU00:FS00:0x22:       Time: 02:45:16
+19:29:31:WU00:FS00:0x22:   Revision: 33fcfc2b3ed2195a423606a264718e31e6b3903f
+19:29:31:WU00:FS00:0x22:     Branch: HEAD
+19:29:31:WU00:FS00:0x22:   Compiler: Visual C++
+19:29:31:WU00:FS00:0x22:    Options: /TP /nologo /EHa /wd4297 /wd4103 /O2 /Ob3 /Zc:throwingNew /MT
+19:29:31:WU00:FS00:0x22:   Platform: win32 10
+19:29:31:WU00:FS00:0x22:       Bits: 64
+19:29:31:WU00:FS00:0x22:       Mode: Release
+19:29:31:WU00:FS00:0x22:************************************ System ************************************
+19:29:31:WU00:FS00:0x22:        CPU: AMD Ryzen 9 5950X 16-Core Processor
+19:29:31:WU00:FS00:0x22:     CPU ID: AuthenticAMD Family 25 Model 33 Stepping 0
+19:29:31:WU00:FS00:0x22:       CPUs: 32
+19:29:31:WU00:FS00:0x22:     Memory: 31.93GiB
+19:29:31:WU00:FS00:0x22:Free Memory: 28.15GiB
+19:29:31:WU00:FS00:0x22:    Threads: WINDOWS_THREADS
+19:29:31:WU00:FS00:0x22: OS Version: 6.2
+19:29:31:WU00:FS00:0x22:Has Battery: false
+19:29:31:WU00:FS00:0x22: On Battery: false
+19:29:31:WU00:FS00:0x22: UTC Offset: 1
+19:29:31:WU00:FS00:0x22:        PID: 13388
+19:29:31:WU00:FS00:0x22:        CWD: X:\_fahdata\work
+19:29:31:WU00:FS00:0x22:************************************ OpenMM ************************************
+19:29:31:WU00:FS00:0x22:    Version: 7.5.1
+19:29:31:WU00:FS00:0x22:********************************************************************************
+19:29:31:WU00:FS00:0x22:Project: 18112 (Run 28, Clone 0, Gen 42)
+19:29:31:WU00:FS00:0x22:Unit: 0x00000000000000000000000000000000
+19:29:31:WU00:FS00:0x22:Digital signatures verified
+19:29:31:WU00:FS00:0x22:Folding@home GPU Core22 Folding@home Core
+19:29:31:WU00:FS00:0x22:Version 0.0.14
+19:29:31:WU00:FS00:0x22:  Checkpoint write interval: 250000 steps (5%) [20 total]
+19:29:31:WU00:FS00:0x22:  JSON viewer frame write interval: 50000 steps (1%) [100 total]
+19:29:31:WU00:FS00:0x22:  XTC frame write interval: 50000 steps (1%) [100 total]
+19:29:31:WU00:FS00:0x22:  Global context and integrator variables write interval: disabled
+19:29:31:WU00:FS00:0x22:There are 3 platforms available.
+19:29:31:WU00:FS00:0x22:Platform 0: Reference
+19:29:31:WU00:FS00:0x22:Platform 1: CPU
+19:29:31:WU00:FS00:0x22:Platform 2: OpenCL
+19:29:31:WU00:FS00:0x22:  opencl-device 0 specified
+19:29:33:WU00:FS00:0x22:Attempting to create OpenCL context:
+19:29:33:WU00:FS00:0x22:  Configuring platform OpenCL
+19:29:40:WU00:FS00:0x22:  Using OpenCL on platformId 0 and gpu 0
+19:29:41:WU00:FS00:0x22:Completed 4000000 out of 5000000 steps (80%)
+19:30:45:WU00:FS00:0x22:Completed 4050000 out of 5000000 steps (81%)
+19:31:49:WU00:FS00:0x22:Completed 4100000 out of 5000000 steps (82%)
+19:32:28:FS00:Paused
+19:32:28:FS00:Shutting core down
+19:32:28:WU00:FS00:0x22:WARNING:Console control signal 1 on PID 13388
+19:32:28:WU00:FS00:0x22:Exiting, please wait. . .
+19:32:28:WU00:FS00:0x22:Folding@home Core Shutdown: INTERRUPTED
+19:32:28:WU00:FS00:FahCore returned: INTERRUPTED (102 = 0x66)

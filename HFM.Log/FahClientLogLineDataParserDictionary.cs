@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Globalization;
 using System.Runtime.Serialization;
 using System.Text.RegularExpressions;
@@ -29,6 +28,7 @@ namespace HFM.Log
             Add(LogLineType.LogOpen, ParseLogOpen);
             Add(LogLineType.WorkUnitCoreVersion, ParseWorkUnitCoreVersion);
             Add(LogLineType.WorkUnitCoreReturn, ParseWorkUnitCoreReturn);
+            Add(LogLineType.WorkUnitPlatform, ParseWorkUnitPlatform);
         }
 
         /// <summary>
@@ -36,15 +36,15 @@ namespace HFM.Log
         /// </summary>
         protected FahClientLogLineDataParserDictionary(SerializationInfo info, StreamingContext context) : base(info, context)
         {
-            
+
         }
 
         internal static object ParseLogOpen(LogLine logLine)
         {
-            Match logOpenMatch;
-            if ((logOpenMatch = FahLogRegex.FahClient.LogOpenRegex.Match(logLine.Raw)).Success)
+            Match match;
+            if ((match = FahLogRegex.FahClient.LogOpenRegex.Match(logLine.Raw)).Success)
             {
-                string startTime = logOpenMatch.Result("${StartTime}");
+                string startTime = match.Result("${StartTime}");
                 // Similar code found in HFM.Client DateTimeConverter
                 // ISO 8601
                 if (DateTime.TryParse(startTime, CultureInfo.InvariantCulture,
@@ -65,22 +65,26 @@ namespace HFM.Log
 
         internal static object ParseWorkUnitCoreVersion(LogLine logLine)
         {
-            Match coreVersionMatch;
-            if ((coreVersionMatch = FahLogRegex.Common.CoreVersionRegex.Match(logLine.Raw)).Success)
-            {
-                return coreVersionMatch.Groups["CoreVer"].Value.Trim();
-            }
-            return null;
+            Match match;
+            return (match = FahLogRegex.Common.CoreVersionRegex.Match(logLine.Raw)).Success
+                ? match.Groups["CoreVer"].Value.Trim()
+                : null;
         }
 
-        internal static string ParseWorkUnitCoreReturn(LogLine logLine)
+        internal static object ParseWorkUnitCoreReturn(LogLine logLine)
         {
-            Match coreReturnMatch;
-            if ((coreReturnMatch = FahLogRegex.FahClient.WorkUnitCoreReturnRegex.Match(logLine.Raw)).Success)
-            {
-                return coreReturnMatch.Groups["UnitResult"].Value;
-            }
-            return null;
+            Match match;
+            return (match = FahLogRegex.FahClient.WorkUnitCoreReturnRegex.Match(logLine.Raw)).Success
+                ? match.Groups["UnitResult"].Value
+                : null;
+        }
+
+        internal static object ParseWorkUnitPlatform(LogLine logLine)
+        {
+            Match match;
+            return (match = FahLogRegex.FahClient.WorkUnitPlatformRegex.Match(logLine.Raw)).Success
+                ? match.Groups["Platform"].Value
+                : null;
         }
     }
 }

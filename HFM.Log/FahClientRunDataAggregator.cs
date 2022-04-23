@@ -107,6 +107,12 @@ namespace HFM.Log
                         unitRunData.ProjectClone = projectData.ProjectClone;
                         unitRunData.ProjectGen = projectData.ProjectGen;
                         break;
+                    case LogLineType.WorkUnitPlatform:
+                        if (line.Data != null)
+                        {
+                            unitRunData.Platform = (string)line.Data;
+                        }
+                        break;
                     case LogLineType.WorkUnitCoreReturn:
                         unitRunData.WorkUnitResult = (string)line.Data;
                         switch (unitRunData.WorkUnitResult)

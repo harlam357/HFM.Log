@@ -56,6 +56,10 @@ namespace HFM.Log
         /// Line indicates the client detected too many failures to run the same work unit.
         /// </summary>
         public const int WorkUnitTooManyErrors = 11;
+        /// <summary>
+        /// Line indicates the work unit processing platform (Reference, CPU, OpenCL, CUDA).
+        /// </summary>
+        public const int WorkUnitPlatform = 12;
 
         private readonly int _value;
 

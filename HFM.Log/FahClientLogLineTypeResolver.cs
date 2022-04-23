@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace HFM.Log
 {
@@ -29,9 +30,10 @@ namespace HFM.Log
             if (line.IndexOf(":    Version", StringComparison.InvariantCulture) > 8) return LogLineType.WorkUnitCoreVersion;
             if (line.Contains(":Project:")) return LogLineType.WorkUnitProject;
             if (line.Contains(":Folding@home Core Shutdown:")) return LogLineType.WorkUnitCoreShutdown;
-            if (System.Text.RegularExpressions.Regex.IsMatch(line, "FahCore returned: ")) return LogLineType.WorkUnitCoreReturn;
+            if (Regex.IsMatch(line, "FahCore returned: ")) return LogLineType.WorkUnitCoreReturn;
             if (line.Contains(":Cleaning up")) return LogLineType.WorkUnitCleaningUp;
             if (line.Contains(":Too many errors, failing")) return LogLineType.WorkUnitTooManyErrors;
+            if (Regex.IsMatch(line, @":  Using \w+(\son platformId \d+)? and gpu \d+")) return LogLineType.WorkUnitPlatform;
 
             // ** Least frequent **
             if (line.StartsWith("*********************** Log Started", StringComparison.Ordinal)) return LogLineType.LogOpen;

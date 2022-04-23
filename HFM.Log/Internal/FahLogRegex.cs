@@ -53,6 +53,9 @@ namespace HFM.Log.Internal
 
             internal static readonly Regex WorkUnitCoreReturnRegex =
                new Regex("\\d{2}:\\d{2}:\\d{2}:(.+:)?WU\\d{2}:FS\\d{2}:FahCore returned: (?<UnitResult>\\w+)", Options);
+
+            internal static readonly Regex WorkUnitPlatformRegex =
+               new Regex("\\d{2}:\\d{2}:\\d{2}:(.+:)?  Using (?<Platform>\\w+)(\\son platformId (?<PlatformId>\\d+))? and gpu (?<GpuId>\\d+)", Options);
         }
     }
 }

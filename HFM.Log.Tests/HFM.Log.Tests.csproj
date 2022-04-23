@@ -23,6 +23,7 @@
     <EmbeddedResource Include="TestData\Client_v7_CORE_RESTART_log.txt" />
     <EmbeddedResource Include="TestData\Client_v7_fr-FR_log.txt" />
     <EmbeddedResource Include="TestData\Client_v7_INTERRUPTED_log.txt" />
+    <EmbeddedResource Include="TestData\Client_v7_OpenCL_log.txt" />
   </ItemGroup>
 
   <ItemGroup>

@@ -174,6 +174,42 @@ namespace HFM.Log
             Assert.AreEqual(TimeSpan.Zero, interruptedFrames[17].Duration);
             Assert.AreNotEqual(TimeSpan.Zero, interruptedFrames[18].Duration);
         }
+
+        [Test]
+        public void FahClientLog_Read_Client_v7_Using_CUDA_Test()
+        {
+            // Act
+            var fahLog = FahClientLog.Read(TestDataReader.ReadStream("Client_v7_INTERRUPTED_log.txt"));
+            // Assert
+            Assert.AreEqual(1, fahLog.ClientRuns.Count);
+
+            var clientRun = fahLog.ClientRuns.First();
+            Assert.AreEqual(2, clientRun.SlotRuns.Count);
+
+            var slotRun1 = clientRun.SlotRuns[1];
+            var unitRun0 = slotRun1.UnitRuns[0];
+            var platformLine = unitRun0.LogLines[86];
+            Assert.AreEqual("CUDA", platformLine.Data.ToString());
+            Assert.AreEqual("CUDA", unitRun0.Data.Platform);
+        }
+
+        [Test]
+        public void FahClientLog_Read_Client_v7_Using_OpenCL_Test()
+        {
+            // Act
+            var fahLog = FahClientLog.Read(TestDataReader.ReadStream("Client_v7_OpenCL_log.txt"));
+            // Assert
+            Assert.AreEqual(1, fahLog.ClientRuns.Count);
+
+            var clientRun = fahLog.ClientRuns.First();
+            Assert.AreEqual(1, clientRun.SlotRuns.Count);
+
+            var slotRun0 = clientRun.SlotRuns[0];
+            var unitRun0 = slotRun0.UnitRuns[0];
+            var platformLine = unitRun0.LogLines[80];
+            Assert.AreEqual("OpenCL", platformLine.Data.ToString());
+            Assert.AreEqual("OpenCL", unitRun0.Data.Platform);
+        }
     }
 
     // ReSharper restore InconsistentNaming
