@@ -4,8 +4,8 @@
     <TargetFrameworks>net5.0;net45</TargetFrameworks>
     <IsPackable>false</IsPackable>
     <RootNamespace>HFM.Log</RootNamespace>
-    <Version>0.3.2</Version>
-    <AssemblyVersion>0.3.0.0</AssemblyVersion>
+    <Version>0.4.0</Version>
+    <AssemblyVersion>0.4.0.0</AssemblyVersion>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\harlam357.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
