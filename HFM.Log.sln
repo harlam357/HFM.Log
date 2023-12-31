@@ -1,18 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30011.22
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HFM.Log", "HFM.Log\HFM.Log.csproj", "{2C3EA8A1-D17F-419D-A76A-970550FB5A09}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HFM.Log.Tests", "HFM.Log.Tests\HFM.Log.Tests.csproj", "{9EA57D40-ECE3-4F75-AD89-72960B847F1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HFM.Log.Tool", "HFM.Log.Tool\HFM.Log.Tool.csproj", "{A8552DC2-2B4E-4193-A12B-2560586B7B42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HFM.Log.Tool", "HFM.Log.Tool\HFM.Log.Tool.csproj", "{A8552DC2-2B4E-4193-A12B-2560586B7B42}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{40ACECA3-7F98-4A33-A405-75AB0D782878}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		azure-pipelines.yml = azure-pipelines.yml
+		Directory.Build.props = Directory.Build.props
 	EndProjectSection
 EndProject
 Global

@@ -1,5 +1,9 @@
 ﻿<Project>
   <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
     <NoWarn>$(NoWarn);1591</NoWarn>
+    <AnalysisMode>All</AnalysisMode>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
 </Project>
