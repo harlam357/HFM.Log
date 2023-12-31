@@ -1,8 +1,4 @@
-﻿
-using System;
-using System.IO;
-
-namespace HFM.Log
+﻿namespace HFM.Log
 {
     internal sealed class ArtifactFolder : IDisposable
     {
@@ -10,7 +6,7 @@ namespace HFM.Log
 
         public ArtifactFolder() : this(Environment.CurrentDirectory)
         {
-            
+
         }
 
         public ArtifactFolder(string basePath)
@@ -33,7 +29,9 @@ namespace HFM.Log
                     Directory.Delete(Path, true);
                 }
             }
+#pragma warning disable CA1031
             catch (Exception)
+#pragma warning restore CA1031
             {
                 // do nothing
             }

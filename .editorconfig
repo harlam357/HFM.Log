@@ -143,3 +143,11 @@ csharp_style_expression_bodied_operators = when_on_single_line:suggestion
 
 # Taking all Visual Studio defaults
 
+###############################
+# Analyzer Rules              #
+###############################
+
+# CA1707: Identifiers should not contain underscores
+dotnet_diagnostic.CA1707.severity = none
+# CA1852: Seal internal types
+dotnet_diagnostic.CA1852.severity = none
