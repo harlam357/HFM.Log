@@ -210,6 +210,24 @@ namespace HFM.Log
             Assert.AreEqual("OpenCL", platformLine.Data.ToString());
             Assert.AreEqual("OpenCL", unitRun0.Data.Platform);
         }
+
+        [Test]
+        public void FahClientLog_Read_Client_v7_Using_Core_0x23_Test()
+        {
+            // Act
+            var fahLog = FahClientLog.Read(TestDataReader.ReadStream("Client_v7_CORE_0x23_log.txt"));
+            // Assert
+            Assert.AreEqual(1, fahLog.ClientRuns.Count);
+
+            var clientRun = fahLog.ClientRuns.First();
+            Assert.AreEqual(2, clientRun.SlotRuns.Count);
+
+            var slotRun3 = clientRun.SlotRuns[3];
+            var unitRunN = slotRun3.UnitRuns.Last();
+            var platformLine = unitRunN.LogLines[93];
+            Assert.AreEqual("CUDA", platformLine.Data.ToString());
+            Assert.AreEqual("CUDA", unitRunN.Data.Platform);
+        }
     }
 
     // ReSharper restore InconsistentNaming

@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace HFM.Log
 {
@@ -33,7 +32,7 @@ namespace HFM.Log
             if (Regex.IsMatch(line, "FahCore returned: ")) return LogLineType.WorkUnitCoreReturn;
             if (line.Contains(":Cleaning up")) return LogLineType.WorkUnitCleaningUp;
             if (line.Contains(":Too many errors, failing")) return LogLineType.WorkUnitTooManyErrors;
-            if (Regex.IsMatch(line, @":  Using \w+(\son platformId \d+)? and gpu \d+")) return LogLineType.WorkUnitPlatform;
+            if (Regex.IsMatch(line, @":  Using \w+(\son\s[\w\s]+)? and gpu \d+")) return LogLineType.WorkUnitPlatform;
 
             // ** Least frequent **
             if (line.StartsWith("*********************** Log Started", StringComparison.Ordinal)) return LogLineType.LogOpen;
