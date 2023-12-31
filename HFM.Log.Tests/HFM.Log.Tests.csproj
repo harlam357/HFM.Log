@@ -4,6 +4,7 @@
     <TargetFrameworks>net6.0;net7.0;net8.0</TargetFrameworks>
     <IsPackable>false</IsPackable>
     <RootNamespace>HFM.Log</RootNamespace>
+    <NoWarn>$(NoWarn);CA2007</NoWarn>
     <Version>1.0.0</Version>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <SignAssembly>true</SignAssembly>
