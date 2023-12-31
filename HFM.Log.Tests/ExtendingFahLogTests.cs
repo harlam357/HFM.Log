@@ -1,9 +1,4 @@
-﻿
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-
-using NUnit.Framework;
+﻿using NUnit.Framework;
 
 namespace HFM.Log
 {
@@ -29,7 +24,7 @@ namespace HFM.Log
                     return logLineType;
                 }
 
-                if (line.Contains("Connecting to ")) return CustomLogLineType.ConnectingTo;
+                if (line.Contains("Connecting to ", StringComparison.Ordinal)) return CustomLogLineType.ConnectingTo;
                 return LogLineType.None;
             }
         }
