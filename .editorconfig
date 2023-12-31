@@ -12,8 +12,10 @@ indent_style = space
 
 [*.{cs,vb}]
 
-# Default severity for analyzer diagnostics - Requires **VS2019 16.5** or later
+# Default severity for analyzer diagnostics
 dotnet_analyzer_diagnostic.severity = warning
+# Default severity for analyzer diagnostics with category 'Style'
+dotnet_analyzer_diagnostic.category-Style.severity = suggestion
 
 indent_size = 4
 insert_final_newline = true
