@@ -1,9 +1,5 @@
-﻿using System;
-using System.Globalization;
-using System.IO;
-using System.Linq;
+﻿using System.Globalization;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 
 using static HFM.Log.Internal.CollectionExtensions;
 
@@ -93,7 +89,7 @@ namespace HFM.Log
             }
         }
 
-        private static Stream OpenFileStream(string path)
+        private static FileStream OpenFileStream(string path)
         {
             // equivalent to StreamReader opening a file for reading
             return new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read, 4096, FileOptions.SequentialScan);
