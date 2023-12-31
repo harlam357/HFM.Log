@@ -1,8 +1,4 @@
-﻿
-using System;
-using System.Collections.Generic;
-
-namespace HFM.Log
+﻿namespace HFM.Log
 {
     /// <summary>
     /// Creates run data objects by aggregating information owned by <see cref="ClientRun"/>, <see cref="SlotRun"/>, and <see cref="UnitRun"/> objects.
@@ -82,9 +78,8 @@ namespace HFM.Log
             internal static void CalculateFrameDataDuration(LogLineFrameData frameData, IDictionary<int, LogLineFrameData> frames)
             {
                 int previousFrameID = frameData.ID - 1;
-                if (frames.ContainsKey(previousFrameID))
+                if (frames.TryGetValue(previousFrameID, out var previousFrameData))
                 {
-                    var previousFrameData = frames[previousFrameID];
                     frameData.Duration = GetTimeSpanDelta(frameData.TimeStamp, previousFrameData.TimeStamp);
                 }
             }

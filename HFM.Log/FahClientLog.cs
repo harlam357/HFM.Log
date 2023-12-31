@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Globalization;
 using System.IO;
 using System.Linq;
@@ -182,12 +182,14 @@ namespace HFM.Log
         private SlotRun EnsureSlotRunExists(int lineIndex, int foldingSlot)
         {
             var clientRun = EnsureClientRunExists(lineIndex);
-            if (!clientRun.SlotRuns.ContainsKey(foldingSlot))
+            if (clientRun.SlotRuns.TryGetValue(foldingSlot, out var slotRun))
             {
-                clientRun.SlotRuns[foldingSlot] = new SlotRun(clientRun, foldingSlot);
+                return slotRun;
             }
 
-            return clientRun.SlotRuns[foldingSlot];
+            slotRun = new SlotRun(clientRun, foldingSlot);
+            clientRun.SlotRuns.Add(foldingSlot, slotRun);
+            return slotRun;
         }
 
         private FahClientUnitRun EnsureUnitRunExists(int lineIndex, int foldingSlot, int queueIndex)
