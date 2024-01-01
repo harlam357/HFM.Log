@@ -1,6 +1,6 @@
-namespace HFM.Log.Tool
+﻿namespace HFM.Log.Tool
 {
-   partial class RichTextBoxExt
+   partial class LogLineRichTextBox
    {
       /// <summary> 
       /// Required designer variable.

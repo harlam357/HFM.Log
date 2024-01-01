@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Windows.Forms;
-
-namespace HFM.Log.Tool
+﻿namespace HFM.Log.Tool
 {
     static class Program
     {
@@ -15,7 +10,8 @@ namespace HFM.Log.Tool
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            using var mainForm = new MainForm();
+            Application.Run(mainForm);
         }
     }
 }

@@ -1,6 +1,4 @@
-﻿
-using System;
-using System.Runtime.InteropServices;
+﻿using System.Runtime.InteropServices;
 
 namespace HFM.Log.Tool
 {
@@ -19,6 +17,7 @@ namespace HFM.Log.Tool
         // ReSharper restore InconsistentNaming
 
         [DllImport("user32.dll", CharSet = CharSet.Auto)]
+        [DefaultDllImportSearchPaths(DllImportSearchPath.System32)]
         internal static extern IntPtr SendMessage(IntPtr hWnd, uint msg, IntPtr wParam, IntPtr lParam);
     }
 }

@@ -35,7 +35,7 @@
             this.treeView1 = new System.Windows.Forms.TreeView();
             this.btnGenCode = new System.Windows.Forms.Button();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.richTextBox1 = new HFM.Log.Tool.RichTextBoxExt();
+            this.richTextBox1 = new HFM.Log.Tool.LogLineRichTextBox();
             this.lblLogLineIndex = new System.Windows.Forms.Label();
             this.lblLogLineType = new System.Windows.Forms.Label();
             this.lblLogLineData = new System.Windows.Forms.Label();
@@ -224,7 +224,7 @@
       private System.Windows.Forms.TextBox txtLogPath;
       private System.Windows.Forms.Button btnBrowse;
       private System.Windows.Forms.Button btnParse;
-      private HFM.Log.Tool.RichTextBoxExt richTextBox1;
+      private HFM.Log.Tool.LogLineRichTextBox richTextBox1;
       private System.Windows.Forms.TreeView treeView1;
       private System.Windows.Forms.Button btnGenCode;
       private System.Windows.Forms.SplitContainer splitContainer1;

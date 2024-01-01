@@ -1,25 +1,21 @@
 ﻿//#define DEV
 
-using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
-using System.IO;
-using System.Linq;
 using System.Reflection;
 using System.Text;
-using System.Windows.Forms;
 
 namespace HFM.Log.Tool
 {
     public partial class MainForm : Form
     {
-        private IList<LogLine> _logLines = new List<LogLine>();
+        private IReadOnlyList<LogLine> _logLines = new List<LogLine>();
         private FahLog _fahLog;
 
         public MainForm()
         {
             InitializeComponent();
+            richTextBox1.ColorLogFile = true;
 
             base.Text = String.Format("HFM Log Tool v{0}", FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location).ProductVersion);
 #if !DEV
@@ -118,7 +114,9 @@ namespace HFM.Log.Tool
             {
                 return Path.GetDirectoryName(path);
             }
+#pragma warning disable CA1031
             catch (Exception)
+#pragma warning restore CA1031
             {
                 return null;
             }
@@ -142,7 +140,7 @@ namespace HFM.Log.Tool
 #endif
                 _logLines = LogLineEnumerable.Create(_fahLog).ToList();
                 PopulateClientRunsInTree(_fahLog);
-                richTextBox1.SetLogLines(_logLines, true);
+                richTextBox1.SetLogLines(new(), _logLines);
             }
             else
             {
@@ -272,7 +270,7 @@ namespace HFM.Log.Tool
                 i++;
             }
 
-            var form2 = new TextDialog();
+            using var form2 = new TextDialog();
             form2.SetText(sb.ToString());
             form2.Show();
         }
